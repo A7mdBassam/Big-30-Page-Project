@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="Assets/Sass/vendors/bootstrap.css">
+        <script src="Assets/Sass/vendors/bootstrap.js"></script>
+    
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/8b6fd05b4e.js" crossorigin="anonymous"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="Assets/Sass/styles.css">
+        
+
+    <title> Home Demo 4 || Blog Magazine React Template </title>
+</head>
+<body class="main-theme home-four">
+    <!-- NAVBAR -->
+    <header>
+        <div class="bars"><i class="fas fa-bars"></i></div>
+        <a class="logo" href="index.html"><h1>LOGO</h1></a>
+        <ul id="navbar">
+
+            <!-- Buttons (signup, themes, and search bar) for the side-navbar that appears on smaller screens -->
+            <div class="mobile nav-buttons">  
+
+                <div class="search-bar-container"> 
+                    <button class="mobile-signup-btn">Sign up</button> 
+                    <input type="text" name="mobile-search-bar" id="mobile-search-bar" placeholder="Search for...">
+                    <span class="search-icon"><i class="fas fa-search"></i></span>
+                </div>
+                     
+            </div>
+
+
+            <button class="mobile cross"><i class="fas fa-times"></i></button>
+            <a class="mobile logo" href="index.html"><h1>LOGO</h1></a>
+            <li class="drop drop-one">
+                <a>Home <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-one">
+                    <ul>
+                        <li><a href="index.html">Default Demo</a> </li>
+                        <li><a href="home2.html">Home Demo 2</a> </li>
+                        <li><a href="home3.html">Home Demo 3</a> </li>
+                        <li><a href="home4.html" class="inner-nav-active">Home Demo 4</a> </li>
+                    </ul>
+                </div>
+            </li>
+           
+            <li class="drop drop-two">
+                <a>Templates <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-two">
+                    <ul>
+                        <li><a href="archive.html">Archive Page</a></li>
+                        <li><a href="archiveAudio.html">Archive Audio</a></li>
+                        <li><a href="archiveVideo.html">Archive Video</a></li>
+
+                        <li class="subdrop">
+                            <a class="drop-link">Author Page <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="Author1.html">Author Page 1</a></li>
+                                    <li><a href="Author2.html">Author Page 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+    
+                        <li class="subdrop">
+                            <a class="drop-link">Search Page <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="Search1.html">Search Page 1</a></li>
+                                    <li><a href="Search2.html">Search Page 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="subdrop">
+                            <a class="drop-link">Single Template <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="SingleTemp1.html">Single Template 1</a></li>
+                                    <li><a href="SingleTemp1Sidebar.html">Template 1 sidebar</a></li>
+                                    <li><a href="SingleTemp2.html">Single Template 2</a></li>
+                                    <li><a href="SingleTemp2WithSidebar.html">Template 2 sidebar</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="singleGallery.html">Single Gallery</a></li>
+                        <li><a href="singleAudio.html">Single Audio</a></li>
+                        <li><a href="singleVideo.html">Single Video</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="drop drop-three">
+                <a>Other pages <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-three">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contactUs.html">Contact us</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="signup.html">Signup</a></li>
+                        <li><a href="forgotPassword.html">Forgot Password</a></li>
+
+                        <li class="subdrop">
+                            <a class="drop-link">Dashboard <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="dashboardPosts.html">Posts</a></li>
+                                    <li><a href="dashboardEditProfile.html">Edit Profile</a></li>
+                                    <li><a href="dashboardSubscription.html">Subscription</a></li>
+                                    <li><a href="dashboardBillingAddress.html">Billing Address</a></li>
+                                    <li><a href="dashboardSubmitPost.html">Submit Post</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="subscription.html">Subscription</a></li>
+                    </ul>
+                </div>
+            </li >
+        </ul>
+
+        <ul class="nav-buttons">     
+            
+            <li class="nav-search">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            <input type="text" name="search-bar" id="search-bar" placeholder="Search for...">
+        </li>
+            <li><button class="signup-btn">Sign up</button></li>            
+        </ul>
+        
+    </header>
+<!-- NAVBAR END -->
+
+
+<!-- Main Content -->
+<main id="main">
+<section class="home-four-header">
+    <div class="background">
+    <div class="black"></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1568430328012-21ed450453ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=874&q=80" alt="Whale" class="bg-img"></div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <h2 class="main-title">The hidden world of whale culture</h2>
+            <h4 class="secondary-title">From singing competitions to food preferences, scientists are learning whales have cultural differences once thought to be unique to humans.</h4>
+
+            <a href="SingleTemp2WithSidebar.html" class="read-more">Read more</a>
+                <div class="other-catagories modal-container has-video">
+                    <button class="open-modal">Watch video</button>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close-modal"><i class="fas fa-times"></i></span>
+                            <h4 class="title">Enjoy ^_^</h4>
+                            <div class="topics-container">
+                                <iframe class="modal-video" width="560" height="315" src="https://www.youtube.com/embed/uQacIZj_xN0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="home-four-main-articles">
+    <div class="red-circle circle"></div>
+        <div class="blue-circle circle"></div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="article-card-small">
+                        <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                        <div class="author-info">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            </div>
+                            <div class="text">
+                                <a href="Author1.html" class="name">Raj Rana</a>
+                                <span class="date">May 20, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="article-card-small">
+                        <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                        <div class="author-info">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            </div>
+                            <div class="text">
+                                <a href="Author1.html" class="name">Raj Rana</a>
+                                <span class="date">May 20, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="article-card-small">
+                        <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                        <div class="author-info">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            </div>
+                            <div class="text">
+                                <a href="Author1.html" class="name">Raj Rana</a>
+                                <span class="date">May 20, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="article-card-small">
+                        <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                        <div class="author-info">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            </div>
+                            <div class="text">
+                                <a href="Author1.html" class="name">Raj Rana</a>
+                                <span class="date">May 20, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="article-card-small">
+                        <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                        <div class="author-info">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            </div>
+                            <div class="text">
+                                <a href="Author1.html" class="name">Raj Rana</a>
+                                <span class="date">May 20, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="article-card-small">
+                        <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                        <div class="author-info">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            </div>
+                            <div class="text">
+                                <a href="Author1.html" class="name">Raj Rana</a>
+                                <span class="date">May 20, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="article-card-small">
+                        <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                        <div class="author-info">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            </div>
+                            <div class="text">
+                                <a href="Author1.html" class="name">Raj Rana</a>
+                                <span class="date">May 20, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="article-card-small">
+                        <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                        <div class="author-info">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            </div>
+                            <div class="text">
+                                <a href="Author1.html" class="name">Raj Rana</a>
+                                <span class="date">May 20, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section-three home-two-articles home-three-articles-tall home-four-travel section-blue">
+    <div class="wrapper">
+        <div class="container">
+            <h2 class="main-title">Subtopics of travel</h2>
+            <h4 class="secondary-title">Discover 286,833 beautiful places to go</h4>
+            <div class="chevrons">
+                <button class="prev-card"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-card"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="slick slick-two">
+                <div class="article-card-tall">
+                    <a href="archive.html"" class="link"> </a>
+                    <div class="image image-container">
+                        <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3RhdHVlJTIwb2YlMjBsaWJlcnR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                    </div>
+                        <div class="text">
+                            <a href="SingleTemp1.html" class="title">New York</a>
+                            <span class="number">112 Articles</span>
+                        </div>  
+                </div>
+
+                <div class="article-card-tall">
+                    <a href="archive.html"" class="link"> </a>
+                    <div class="image image-container">
+                        <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3RhdHVlJTIwb2YlMjBsaWJlcnR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                    </div>
+                        <div class="text">
+                            <a href="SingleTemp1.html" class="title">New York</a>
+                            <span class="number">112 Articles</span>
+                        </div>  
+                </div>
+
+                <div class="article-card-tall">
+                    <a href="archive.html"" class="link"> </a>
+                    <div class="image image-container">
+                        <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3RhdHVlJTIwb2YlMjBsaWJlcnR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                    </div>
+                        <div class="text">
+                            <a href="SingleTemp1.html" class="title">New York</a>
+                            <span class="number">112 Articles</span>
+                        </div>  
+                </div>
+
+                <div class="article-card-tall">
+                    <a href="archive.html"" class="link"> </a>
+                    <div class="image image-container">
+                        <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3RhdHVlJTIwb2YlMjBsaWJlcnR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                    </div>
+                        <div class="text">
+                            <a href="SingleTemp1.html" class="title">New York</a>
+                            <span class="number">112 Articles</span>
+                        </div>  
+                </div>
+
+                <div class="article-card-tall">
+                    <a href="archive.html"" class="link"> </a>
+                    <div class="image image-container">
+                        <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3RhdHVlJTIwb2YlMjBsaWJlcnR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                    </div>
+                        <div class="text">
+                            <a href="SingleTemp1.html" class="title">New York</a>
+                            <span class="number">112 Articles</span>
+                        </div>  
+                </div>
+
+                <div class="article-card-tall">
+                    <a href="archive.html"" class="link"> </a>
+                    <div class="image image-container">
+                        <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3RhdHVlJTIwb2YlMjBsaWJlcnR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                    </div>
+                        <div class="text">
+                            <a href="SingleTemp1.html" class="title">New York</a>
+                            <span class="number">112 Articles</span>
+                        </div>  
+                </div>
+
+                <div class="article-card-tall">
+                    <a href="archive.html"" class="link"> </a>
+                    <div class="image image-container">
+                        <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3RhdHVlJTIwb2YlMjBsaWJlcnR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                    </div>
+                        <div class="text">
+                            <a href="SingleTemp1.html" class="title">New York</a>
+                            <span class="number">112 Articles</span>
+                        </div>  
+                </div>
+
+                <div class="article-card-tall">
+                    <a href="archive.html"" class="link"> </a>
+                    <div class="image image-container">
+                        <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3RhdHVlJTIwb2YlMjBsaWJlcnR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                    </div>
+                        <div class="text">
+                            <a href="SingleTemp1.html" class="title">New York</a>
+                            <span class="number">112 Articles</span>
+                        </div>  
+                </div>
+
+                
+
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="home-four-articles-scroll">
+    <div class="wrapper">
+        <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="Boat" class="bg-img">
+                </div>
+                <div class="article">
+                    <a href="SingleTemp1Sidebar.html" class="title">Unusual ‘machine in the woods’ taps clean energy deep underground for new Microsoft development teams</a>
+                    <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt debitis voluptates dolores vel nisi.</div>
+
+                    <div class="author-info">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                        </div>
+                        <div class="text">
+                            <a href="Author1.html" class="name">Silvia Lora</a>
+                            <div class="date">20 May, 2021</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articles-scroll">
+                    <div class="content">
+                        <a href="SingleTemp2.html" class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum molestias, adipisci maxime non molestiae. Rerum natus quisquam assumenda suscipit?</a>
+
+                        <div class="author-info">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            <a href="Author2.html" class="name">Silvia Lora</a>
+                            <span class="date"> . May 20, 2021</span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="SingleTemp2.html" class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum molestias, adipisci maxime non molestiae. Rerum natus quisquam assumenda suscipit?</a>
+
+                        <div class="author-info">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            <a href="Author2.html" class="name">Silvia Lora</a>
+                            <span class="date"> . May 20, 2021</span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="SingleTemp2.html" class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum molestias, adipisci maxime non molestiae. Rerum natus quisquam assumenda suscipit?</a>
+
+                        <div class="author-info">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            <a href="Author2.html" class="name">Silvia Lora</a>
+                            <span class="date"> . May 20, 2021</span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="SingleTemp2.html" class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum molestias, adipisci maxime non molestiae. Rerum natus quisquam assumenda suscipit?</a>
+
+                        <div class="author-info">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            <a href="Author2.html" class="name">Silvia Lora</a>
+                            <span class="date"> . May 20, 2021</span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="SingleTemp2.html" class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum molestias, adipisci maxime non molestiae. Rerum natus quisquam assumenda suscipit?</a>
+
+                        <div class="author-info">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            <a href="Author2.html" class="name">Silvia Lora</a>
+                            <span class="date"> . May 20, 2021</span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="SingleTemp2.html" class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum molestias, adipisci maxime non molestiae. Rerum natus quisquam assumenda suscipit?</a>
+
+                        <div class="author-info">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            <a href="Author2.html" class="name">Silvia Lora</a>
+                            <span class="date"> . May 20, 2021</span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="SingleTemp2.html" class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum molestias, adipisci maxime non molestiae. Rerum natus quisquam assumenda suscipit?</a>
+
+                        <div class="author-info">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            <a href="Author2.html" class="name">Silvia Lora</a>
+                            <span class="date"> . May 20, 2021</span>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <a href="SingleTemp2.html" class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum molestias, adipisci maxime non molestiae. Rerum natus quisquam assumenda suscipit?</a>
+
+                        <div class="author-info">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            <a href="Author2.html" class="name">Silvia Lora</a>
+                            <span class="date"> . May 20, 2021</span>
+                        </div>
+                    </div>
+
+                    <div class="content last">
+                        <a href="SingleTemp2.html" class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum molestias, adipisci maxime non molestiae. Rerum natus quisquam assumenda suscipit?</a>
+
+                        <div class="author-info">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                            <a href="Author2.html" class="name">Silvia Lora</a>
+                            <span class="date"> . May 20, 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section-two section-blue">
+    <div class="wrapper">
+        <div class="container">
+            <h2 class="main-title">Newest authors</h2>
+            <h4 class="secondary-title">Say hello to future creator potentials</h4>
+
+            
+            <div class="slick slick-one">
+                <div class="author-card">
+                    <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                    <a class="author-link" href="#"></a>
+                    <div class="author-info">
+                        <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                        <span class="author-name">Friar Donna</span>
+                         <span class="author-handle">@Author job</span>
+                    </div>
+                </div>
+
+                <div class="author-card">
+                    <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                    <a class="author-link" href="#"></a>
+                    <div class="author-info">
+                        <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                        <span class="author-name">Friar Donna</span>
+                         <span class="author-handle">@Author job</span>
+                    </div>
+                </div>
+
+                <div class="author-card">
+                    <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                    <a class="author-link" href="#"></a>
+                    <div class="author-info">
+                        <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                        <span class="author-name">Friar Donna</span>
+                         <span class="author-handle">@Author job</span>
+                    </div>
+                </div>
+                
+                <div class="author-card">
+                    <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                    <a class="author-link" href="#"></a>
+                    <div class="author-info">
+                        <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                        <span class="author-name">Friar Donna</span>
+                         <span class="author-handle">@Author job</span>
+                    </div>
+                </div>
+
+                <div class="author-card">
+                    <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                    <a class="author-link" href="#"></a>
+                    <div class="author-info">
+                        <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                        <span class="author-name">Friar Donna</span>
+                         <span class="author-handle">@Author job</span>
+                    </div>
+                </div>
+
+                <div class="author-card">
+                    <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                    <a class="author-link" href="#"></a>
+                    <div class="author-info">
+                        <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                        <span class="author-name">Friar Donna</span>
+                         <span class="author-handle">@Author job</span>
+                    </div>
+                </div>
+
+                <div class="author-card">
+                    <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                    <a class="author-link" href="#"></a>
+                    <div class="author-info">
+                        <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                        <span class="author-name">Friar Donna</span>
+                         <span class="author-handle">@Author job</span>
+                    </div>
+                </div>
+            </div>
+             
+
+            <div class="chevrons">
+                <button class="prev-card"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-card"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            </div>
+        </div>
+    
+</section>
+
+<section class="section-fourteen">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-12">
+                    <div class="text">
+
+                    <h2 class="main-title">Join our newsletter 🎉</h2>
+                    <h4 class="secondary-title">Read and share new perspectives on just about any topic. Everyone’s welcome.</h4>
+                    <div class="list-item">
+                        <span class="tag tag-red">01</span> <span>Get more discount</span> 
+                    </div>
+                    <div class="list-item">
+                        <span class="tag tag-blue">02</span> <span>Get premium magazines</span>
+
+                </div>
+                    <div class="input">
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <button> <i class="fas fa-arrow-right"></i> </button>
+                </div>
+                </div>
+                </div>
+
+                <div class="col-lg-7 col-sm-12">
+                    <img src="https://chisnghiax.com/ncmaz/static/media/SVG-subcribe2.efb832b2.png" alt="Author Drawing">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-fifteen">
+    <div class="container">
+        <h2 class="main-title">🎬 The Videos</h2>
+        <h4 class="secondary-title">Check out our hottest videos. View more and share more new perspectives on just about any topic. Everyone’s welcome.</h4>
+        <div class="row">
+            <div class="col-lg-9 col-md-12 col-sm-12">
+
+                <div class="main-video">
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a5V6gdu5ih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" alt="Bird" class="main-video-img">
+
+                    <span class="play-icon"><i class="fas fa-play"></i></span>
+                
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <ul>
+                    <div class="background"></div>
+                    <li class="active">
+                        <div class="side-video">
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/a5V6gdu5ih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" alt="Bird" class="main-video-img">
+
+                            <span class="play-icon"><i class="fas fa-play"></i></span>
+                        
+                        </div> 
+                    </li>
+
+                    <li>
+                        <div class="side-video">
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MuB7HHeuNbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            <img src="https://images.unsplash.com/photo-1577870736095-e88b9030dd68?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aWd1YW5hfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Iguana" class="main-video-img">
+
+                            <span class="play-icon"><i class="fas fa-play"></i></span>
+                        
+                        </div> 
+                    </li>
+
+                    <li>
+                        <div class="side-video">
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/a5V6gdu5ih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            <img src="https://images.unsplash.com/photo-1522735395567-43c00b2897a7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2luZG1pbGx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Windmills" class="main-video-img">
+
+                            <span class="play-icon"><i class="fas fa-play"></i></span>
+                        
+                        </div> 
+                    </li>
+
+                    <li>
+                        <div class="side-video">
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MuB7HHeuNbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            <img src="https://images.unsplash.com/photo-1439405326854-014607f694d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8b2NlYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Ocean" class="main-video-img">
+
+                            <span class="play-icon"><i class="fas fa-play"></i></span>
+                        
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-eleven section-blue">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-12">
+                    <div class="text">
+                    <p class="additional-text">Supper change your planning powers</p>
+                    <h2 class="main-title">Become an author and share your great stories</h2>
+                    <h4 class="secondary-title">Become an author you can earn extra income by writing articles. Read and share new perspectives on just about any topic. Everyone’s welcome.
+                    </h4>
+                    <button>Become an author</button>
+                </div>
+                </div>
+
+                <div class="col-lg-7 col-sm-12">
+                    <img src="Assets/images/BecomeAnAuthorImg.02703848.png" alt="Author Drawing">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-seven section-dark">
+    <div class="wrapper">
+        <div class="container">
+            <h2 class="main-title">Explore latest video articles</h2>
+            <h4 class="secondary-title">Hover on the post card and preview video 🥡</h4>
+            <div class="row">
+             <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="video-card">
+                    <a href="singleVideo.html" class="link"></a>
+                    <div class="image-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/376DUWvQroU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJvYXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="boat">
+                        <a href="#" class="tag tag-red">Jewelry</a>
+                        <span class="bookmark bookmark-dark"><i class="far fa-bookmark"> </i></span>
+                        <span class="play-icon"><i class="fas fa-play"></i></span>
+                    </div>
+                    
+                    <div class="info-container">
+                        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="avatar">
+                        
+                        <div class="text">
+                            <h4 class="title">Mind games: How gaming can play a Falcon Agnes in the game</h4>
+                            <div class="author-info">
+                                <a href="#" class="name">Kimson Doan</a> 
+                                <span class="date"> . May 20, 2021 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="video-card">
+                    <a href="singleVideo.html" class="link"></a>
+                    <div class="image-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/376DUWvQroU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJvYXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="boat">
+                        <a href="#" class="tag tag-red">Jewelry</a>
+                        <span class="bookmark bookmark-dark"><i class="far fa-bookmark"> </i></span>
+                        <span class="play-icon"><i class="fas fa-play"></i></span>
+                    </div>
+                    
+                    <div class="info-container">
+                        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="avatar">
+                        
+                        <div class="text">
+                            <h4 class="title">Mind games: How gaming can play a Falcon Agnes in the game</h4>
+                            <div class="author-info">
+                                <a href="#" class="name">Kimson Doan</a> 
+                                <span class="date"> . May 20, 2021 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="video-card">
+                    <a href="singleVideo.html" class="link"></a>
+                    <div class="image-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/376DUWvQroU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJvYXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="boat">
+                        <a href="#" class="tag tag-red">Jewelry</a>
+                        <span class="bookmark bookmark-dark"><i class="far fa-bookmark"> </i></span>
+                        <span class="play-icon"><i class="fas fa-play"></i></span>
+                    </div>
+                    
+                    <div class="info-container">
+                        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="avatar">
+                        
+                        <div class="text">
+                            <h4 class="title">Mind games: How gaming can play a Falcon Agnes in the game</h4>
+                            <div class="author-info">
+                                <a href="#" class="name">Kimson Doan</a> 
+                                <span class="date"> . May 20, 2021 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="video-card">
+                    <a href="singleVideo.html" class="link"></a>
+                    <div class="image-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/376DUWvQroU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJvYXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="boat">
+                        <a href="#" class="tag tag-red">Jewelry</a>
+                        <span class="bookmark bookmark-dark"><i class="far fa-bookmark"> </i></span>
+                        <span class="play-icon"><i class="fas fa-play"></i></span>
+                    </div>
+                    
+                    <div class="info-container">
+                        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="avatar">
+                        
+                        <div class="text">
+                            <h4 class="title">Mind games: How gaming can play a Falcon Agnes in the game</h4>
+                            <div class="author-info">
+                                <a href="#" class="name">Kimson Doan</a> 
+                                <span class="date"> . May 20, 2021 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="video-card">
+                    <a href="singleVideo.html" class="link"></a>
+                    <div class="image-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/376DUWvQroU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJvYXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="boat">
+                        <a href="#" class="tag tag-red">Jewelry</a>
+                        <span class="bookmark bookmark-dark"><i class="far fa-bookmark"> </i></span>
+                        <span class="play-icon"><i class="fas fa-play"></i></span>
+                    </div>
+                    
+                    <div class="info-container">
+                        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="avatar">
+                        
+                        <div class="text">
+                            <h4 class="title">Mind games: How gaming can play a Falcon Agnes in the game</h4>
+                            <div class="author-info">
+                                <a href="#" class="name">Kimson Doan</a> 
+                                <span class="date"> . May 20, 2021 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="video-card">
+                    <a href="singleVideo.html" class="link"></a>
+                    <div class="image-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/376DUWvQroU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJvYXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="boat">
+                        <a href="#" class="tag tag-red">Jewelry</a>
+                        <span class="bookmark bookmark-dark"><i class="far fa-bookmark"> </i></span>
+                        <span class="play-icon"><i class="fas fa-play"></i></span>
+                    </div>
+                    
+                    <div class="info-container">
+                        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="avatar">
+                        
+                        <div class="text">
+                            <h4 class="title">Mind games: How gaming can play a Falcon Agnes in the game</h4>
+                            <div class="author-info">
+                                <a href="#" class="name">Kimson Doan</a> 
+                                <span class="date"> . May 20, 2021 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="archiveVideo.html" class="show-more">
+        <button>Show me more</button>
+        </a>    
+    </div>
+    </div>
+</section>
+
+<section class="articles">
+
+    <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="article-card">
+                            <a href="singleVideo.html" class="link"></a>
+                            <div class="image video-card">
+                                <div class="image-container">
+                                    <img src="https://images.unsplash.com/photo-1595475177190-04a1111e5119?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Food" class="bg-img">
+    
+                                    <span class="play-icon"><i class="fas fa-play"></i></span>
+
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/shrBv5Wq7no?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            
+                            <a href="archive.html" class="tag tag-red">Electronics</a>
+                            <div class="author-info">
+                                <img src="https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxwZXJzb258ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                <a href="Author1.html" class="name">James Timothy </a>
+                                <span class="date"> . May 20, 2021</span>
+                            </div>
+                            <a href="singleVideo.html" class="title">Microsoft announces a five year Lorem ipsum dolor sit amet consectetur.</a>
+                            <div class="social-media">
+                                <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                            </div>
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="article-card">
+                            <a href="SingleTemp1.html" class="link"></a>
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1595475177190-04a1111e5119?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Food" class="bg-img">
+                            </div>
+                            
+                            <a href="archive.html" class="tag tag-red">Electronics</a>
+                            <div class="author-info">
+                                <img src="https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxwZXJzb258ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                <a href="Author1.html" class="name">James Timothy </a>
+                                <span class="date"> . May 20, 2021</span>
+                            </div>
+                            <a href="SingleTemp1.html" class="title">Microsoft announces a five year Lorem ipsum dolor sit amet consectetur.</a>
+                            <div class="social-media">
+                                <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                            </div>
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="article-card">
+                            <a href="SingleTemp1.html" class="link"></a>
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1595475177190-04a1111e5119?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Food" class="bg-img">
+                            </div>
+                            
+                            <a href="archive.html" class="tag tag-red">Electronics</a>
+                            <div class="author-info">
+                                <img src="https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxwZXJzb258ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                <a href="Author1.html" class="name">James Timothy </a>
+                                <span class="date"> . May 20, 2021</span>
+                            </div>
+                            <a href="SingleTemp1.html" class="title">Microsoft announces a five year Lorem ipsum dolor sit amet consectetur.</a>
+                            <div class="social-media">
+                                <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                            </div>
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="article-card">
+                            <a href="SingleTemp1.html" class="link"></a>
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1595475177190-04a1111e5119?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Food" class="bg-img">
+                            </div>
+                            
+                            <a href="archive.html" class="tag tag-red">Electronics</a>
+                            <div class="author-info">
+                                <img src="https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxwZXJzb258ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                <a href="Author1.html" class="name">James Timothy </a>
+                                <span class="date"> . May 20, 2021</span>
+                            </div>
+                            <a href="SingleTemp1.html" class="title">Microsoft announces a five year Lorem ipsum dolor sit amet consectetur.</a>
+                            <div class="social-media">
+                                <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                            </div>
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="article-card">
+                            <a href="SingleTemp1.html" class="link"></a>
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1595475177190-04a1111e5119?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Food" class="bg-img">
+                            </div>
+                            
+                            <a href="archive.html" class="tag tag-red">Electronics</a>
+                            <div class="author-info">
+                                <img src="https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxwZXJzb258ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                <a href="Author1.html" class="name">James Timothy </a>
+                                <span class="date"> . May 20, 2021</span>
+                            </div>
+                            <a href="SingleTemp1.html" class="title">Microsoft announces a five year Lorem ipsum dolor sit amet consectetur.</a>
+                            <div class="social-media">
+                                <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                            </div>
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="article-card">
+                            <a href="SingleTemp1.html" class="link"></a>
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1595475177190-04a1111e5119?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Food" class="bg-img">
+                            </div>
+                            
+                            <a href="archive.html" class="tag tag-red">Electronics</a>
+                            <div class="author-info">
+                                <img src="https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxwZXJzb258ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                <a href="Author1.html" class="name">James Timothy </a>
+                                <span class="date"> . May 20, 2021</span>
+                            </div>
+                            <a href="SingleTemp1.html" class="title">Microsoft announces a five year Lorem ipsum dolor sit amet consectetur.</a>
+                            <div class="social-media">
+                                <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                            </div>
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="article-card">
+                            <a href="SingleTemp1.html" class="link"></a>
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1595475177190-04a1111e5119?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Food" class="bg-img">
+                            </div>
+                            
+                            <a href="archive.html" class="tag tag-red">Electronics</a>
+                            <div class="author-info">
+                                <img src="https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxwZXJzb258ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                <a href="Author1.html" class="name">James Timothy </a>
+                                <span class="date"> . May 20, 2021</span>
+                            </div>
+                            <a href="SingleTemp1.html" class="title">Microsoft announces a five year Lorem ipsum dolor sit amet consectetur.</a>
+                            <div class="social-media">
+                                <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                            </div>
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="article-card">
+                            <a href="singleGallery.html" class="link"></a> 
+                            <div class="image">
+                                <div class="article-card-slick">
+
+                                    <div>
+                                    <img src="https://images.unsplash.com/photo-1595475177190-04a1111e5119?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Food" class="bg-img">
+                                    </div>
+
+                                    <div>
+                                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Beach" class="bg-img">
+                                    </div>
+
+                                    <div>
+                                    <img src="https://images.unsplash.com/photo-1595475177190-04a1111e5119?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Food" class="bg-img">
+                                    </div>
+
+                                    <div>
+                                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Beach" class="bg-img">
+                                    </div>
+
+                                </div>
+
+                                <div class="chevrons">
+                                    <button class="prev-card"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="next-card"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <a href="archive.html" class="tag tag-red">Electronics</a>
+                            <div class="author-info">
+                                
+                                <img src="https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxwZXJzb258ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                <a href="Author1.html" class="name">James Timothy </a>
+                                <span class="date"> . May 20, 2021</span>
+                            </div>
+                            <a href="singleGallery.html" class="title">Microsoft announces a five year Lorem ipsum dolor sit amet consectetur.</a>
+                            <div class="social-media">
+                                <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                            </div>
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-horizontal">
+                <ul>
+                    <a href="#" class="footer-logo">LOGO</a>
+                    <li> <a href="#"> <i class="fab fa-facebook-square"></i> <span>Facebook</span> </a></li>
+                    <li> <a href="#"> <i class="fab fa-twitter-square"></i> <span>Twitter</span></a> </li>
+                    <li> <a href="#"> <i class="fab fa-instagram-square"></i> <span>Instagram</span> </a> </li>
+                    <li> <a href="#"> <i class="fab fa-youtube-square"></i> <span>Youtube</span></a> </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            
+
+
+        </div>
+    </div>
+</footer>
+
+<!-- Footer END -->
+</div>
+    <!-- SlickJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <!-- Javascript -->
+    <script src="Assets/Javascript/main.js"></script>
+    <script src="Assets/Javascript/slick.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="Assets/Sass/vendors/bootstrap.css">
+        <script src="Assets/Sass/vendors/bootstrap.js"></script>
+    
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/8b6fd05b4e.js" crossorigin="anonymous"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="Assets/Sass/styles.css">
+
+    <title> Single || Blog Magazine React Template </title>
+</head>
+<body class="main-theme">
+    <!-- NAVBAR -->
+    <header>
+        <div class="bars"><i class="fas fa-bars"></i></div>
+        <a class="logo" href="#"><h1>LOGO</h1></a>
+        <ul id="navbar">
+
+            <!-- Buttons (signup, themes, and search bar) for the side-navbar that appears on smaller screens -->
+            <div class="mobile nav-buttons">  
+
+                <div class="search-bar-container"> 
+                    <button class="mobile-signup-btn">Sign up</button> 
+                    <input type="text" name="mobile-search-bar" id="mobile-search-bar" placeholder="Search for...">
+                    <span class="search-icon"><i class="fas fa-search"></i></span>
+                </div>
+                     
+            </div>
+
+
+            <button class="mobile cross"><i class="fas fa-times"></i></button>
+            <a class="mobile logo" href="#"><h1>LOGO</h1></a>
+            <li class="drop drop-one">
+                <a>Home <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-one">
+                    <ul>
+                        <li><a href="index.html">Default Demo</a> </li>
+                        <li><a href="home2.html">Home Demo 2</a> </li>
+                        <li><a href="home3.html">Home Demo 3</a> </li>
+                        <li><a href="home4.html">Home Demo 4</a> </li>
+
+                    </ul>
+                </div>
+            </li>
+           
+            <li class="drop drop-two">
+                <a>Templates <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-two">
+                    <ul>
+                        <li><a href="archive.html">Archive Page</a></li>
+                        <li><a href="archiveAudio.html">Archive Audio</a></li>
+                        <li><a href="archiveVideo.html">Archive Video</a></li>
+
+                        <li class="subdrop">
+                            <a class="drop-link">Author Page <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="Author1.html">Author Page 1</a></li>
+                                    <li><a href="Author2.html">Author Page 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+    
+                        <li class="subdrop">
+                            <a class="drop-link">Search Page <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="Search1.html">Search Page 1</a></li>
+                                    <li><a href="Search2.html">Search Page 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="subdrop">
+                            <a class="drop-link">Single Template <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="SingleTemp1.html">Single Template 1</a></li>
+                                    <li><a href="SingleTemp1Sidebar.html">Template 1 sidebar</a></li>
+                                    <li><a href="SingleTemp2.html">Single Template 2</a></li>
+                                    <li><a href="SingleTemp2WithSidebar.html" class="inner-nav-active">Template 2 sidebar</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="singleGallery.html">Single Gallery</a></li>
+                        <li><a href="singleAudio.html">Single Audio</a></li>
+                        <li><a href="singleVideo.html">Single Video</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drop drop-three">
+                <a>Other pages <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-three">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contactUs.html">Contact us</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="signup.html">Signup</a></li>
+                        <li><a href="forgotPassword.html">Forgot Password</a></li>
+    
+                        <li class="subdrop">
+                            <a class="drop-link">Dashboard <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="dashboardPosts.html">Posts</a></li>
+                                    <li><a href="dashboardEditProfile.html">Edit Profile</a></li>
+                                    <li><a href="dashboardSubscription.html">Subscription</a></li>
+                                    <li><a href="dashboardBillingAddress.html">Billing Address</a></li>
+                                    <li><a href="dashboardSubmitPost.html">Submit Post</a></li>
+                                </ul>
+                            </div>
+                        </li>
+    
+                        <li><a href="subscription.html">Subscription</a></li>
+                    </ul>
+                </div>
+            </li >
+        </ul>
+
+        <ul class="nav-buttons">     
+            
+            <li class="nav-search">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            <input type="text" name="search-bar" id="search-bar" placeholder="Search for...">
+        </li>
+            <li><button class="signup-btn">Sign up</button></li>            
+        </ul>
+
+        <!-- Progress Bar -->
+        <div class="progress">
+            <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=8" alt="author" class="avatar">
+            <span class="title"> Quiet ingenuity: 120,000 lunches and counting</span>
+
+            <div class="buttons">
+                <div class="social-media">
+                    <span class="likes"><i class="fas fa-heart"></i> 3.4k</span>
+                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                    <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                </div>
+                
+                <ul class="social-media-links">
+                    <li> <a href="#"> <i class="fab fa-facebook-f"> </a></i></li>
+                    <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
+                    <li><a href="#"> <i class="fab fa-linkedin-in"> </a></i></li>
+                    <li><a href="#"> <i class="fab fa-instagram"> </a></i></li>
+                </ul>
+            </div>
+
+            <div class="prog-bar-container">
+                <div class="prog-bar"></div>
+            </div>
+
+        </div>
+        
+    </header>
+<!-- NAVBAR END -->
+
+
+<!-- Main Content -->
+<main id="main">
+
+   <!-- Header -->
+   <section class="single-temp-two-header section-header">
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+            <div class="text">
+                <a href="#" class="tag tag-red">Garden</a>
+                <a href="#" class="tag tag-dark-red">Jewelry</a>    
+                <h1 class="title">Quiet ingenuity: 120,000 lunches and counting</h1>
+                <div class="horizontal-line"></div>
+                <div class="under-the-line">
+                    <div class="author-info">
+                        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Author" class="avatar">
+                        <div class="author-text">
+                            <a href="#" class="name">Ben Englesen</a> 
+                            <div class="date">
+                                May 20, 2021 
+                                <span class="read-time"> . 6 min read</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="buttons">
+                        <div class="social-media">
+                            <span class="likes"><i class="fas fa-heart"></i> 3.4k</span>
+                            <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                        </div>
+                        <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+
+                        <div class="share dropdown-container">
+                        <button class="share-icon dropdown-btn"> <i class="fas fa-share-alt"></i> </button>
+                        <ul class="dropdown dropdown-share">
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>Linkedin</li>
+                        </ul>
+                        </div>
+
+                        <div class="dropdown-container more">
+                        <button class="more-icon dropdown-btn"> <i class="fas fa-ellipsis-h"></i></button>
+                        <ul class="dropdown dropdown-more">
+                            <li>Copy</li>
+                            <li>Comment</li>
+                            <li>Hide</li>
+                            <li class="show-modal report">Report</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1605487903301-a1dff2e6bbbe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1957&q=80" alt="Mountain" class="bg-img">
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Article -->
+    <section class="article">
+            <div class="container">
+               <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12 the-article">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente, minima corrupti dolores necessitatibus suscipit accusantium dignissimos culpa cumque.
+                    </p>
+    
+                    <p>It is a long established fact that a <b>reader</b> will be distracted by the readable content of a page when looking at its <b>layout</b>. The point of using Lorem Ipsum is that it has a more-or-less normal <a href="#">distribution of letters.</a></p>
+    
+                    <p>
+                        <ol>
+                            <li>We want everything to look good out of the box.</li>
+                            <li>Really just the first reason, that's the whole point of the plugin.</li>
+                            <li>Here's a third pretend reason though a list with three items looks more realistic than a list with two items.</li>
+                        </ol>
+                    </p>
+    
+                    <h4>Typograohy should be easy</h4>
+    
+                    <p>So that's a header for you — with any luck if we've done our job correctly that will look pretty reasonable.</p>
+    
+                    <p>Something a wise person once told me about typography is:</p>
+    
+    
+                    <q><cite> Typography is pretty important if you don't want your stuff to look like trash. Make it good then it won't be bad. </cite></q>
+           
+                    <p>It's probably important that images look okay here by default as well:</p>
+    
+                    <img src="https://images.unsplash.com/photo-1501493870936-9c2e41625521?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1045&q=80" alt="Tree" class="article-img">
+    
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente</p>
+    
+                    <p>Now I'm going to show you an example of an unordered list to make sure that looks good, too:</p>
+    
+                    <p>
+                        <ul>
+                            <li>So here is the first item in this list.</li>
+                            <li>In this example we're keeping the items short.</li>
+                            <li>Later, we'll use longer, more complex list items.</li>
+                        </ul>
+                        <p>and that's the end of this section</p>
+    
+                    </p>
+    
+    
+                    <h2>Code should look okay by default.</h2>
+    
+                    <p>I think most people are going to use <a href="https://highlightjs.org/">highlight.js</a> or <a href="https://prismjs.com/">Prism</a> or something if they want to style their code blocks but it wouldn't hurt to make them look <i>okay</i> out of the box, even with no syntax highlighting.</p>
+    
+                    <p>What I've written here is probably long enough, but adding this final sentence can't hurt.</p>
+    
+                    <p class="code">
+                        function tick() { <br>
+                            const element = ( <br>
+                              &lt; div &gt; <br>
+                              &lt;h1&gt;Hello, world! &lt;/h1&gt; <br>
+                              &lt;h2&gt;It is {new Date().toLocaleTimeString()}. &lt;/h2&gt; <br>
+                              &lt;/div&gt; <br>
+                            ); <br>
+                            ReactDOM.render(element, document.getElementById('root'));<br>
+                          } <br>
+                    </p>
+    
+                    <h2>We still need to think about stacked headings though.</h2>
+                    <h4 class="secondary-title">Let's make sure we don't screw that up with 'h4' elements, either.</h4>
+    
+                    <p>Phew, with any luck we have styled the headings above this text and they look pretty good.</p>
+    
+                    <p>Let's add a closing paragraph here so things end with a decently sized block of text. I can't explain why I want things to end that way but I have to assume it's because I think things will look weird or unbalanced if there is a heading too close to the end of the document.</p>
+    
+                    <p>What I've written here is probably long enough, but adding this final sentence can't hurt.</p>
+    
+                    <div class="article-tags">
+                        <a href="#">Garden</a>
+                        <a href="#">Jewelry</a>
+                        <a href="#">Tools</a>
+                    </div>
+    
+                    <div class="written-by">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Author" class="avatar">
+                        <div class="text">
+                            <p class="above-name">Written By</p>
+                            <a href="#" class="name">Fones Mimi</a>
+                            <p class="below-name">There’s no stopping the tech giant. Apple now opens its 100th store in China.There’s no stopping the tech giant. <a href="#" class="read-more">ReadMore</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="side-bar side-bar-tags">
+                        <div class="header">    
+                            <h4 class="title">🏷 Discover more tags</h4>
+                            <a href="#" class="view">View all</a>
+                        </div>
+
+                        <div class="content">
+                            <a href="#" class="side-bar-tag">Garden (13)</a>
+                            <a href="#" class="side-bar-tag">Industrial (13)</a>
+                            <a href="#" class="side-bar-tag">Electronics (13)</a>
+                            <a href="#" class="side-bar-tag">Jewelry (22)</a>
+                            <a href="#" class="side-bar-tag">Tools (19)</a>
+                            <a href="#" class="side-bar-tag">Automotive (15)</a>
+                            <a href="#" class="side-bar-tag">Toys (13)</a>
+                            <a href="#" class="side-bar-tag">Outdoors (17)</a>
+                            <a href="#" class="side-bar-tag">Design (20)</a>
+                            <a href="#" class="side-bar-tag">sports (14)</a>
+                            <a href="#" class="side-bar-tag">Beauty (13)</a>
+                            <a href="#" class="side-bar-tag">Garden (13)</a>
+                            <a href="#" class="side-bar-tag">Industrial (13)</a>
+                            <a href="#" class="side-bar-tag">Electronics (13)</a>
+                            <a href="#" class="side-bar-tag">Jewelry (22)</a>
+                            <a href="#" class="side-bar-tag">Tools (19)</a>
+                            <a href="#" class="side-bar-tag">Automotive (15)</a>
+                            <a href="#" class="side-bar-tag">Toys (13)</a>
+                            <a href="#" class="side-bar-tag">Outdoors (17)</a>
+                            <a href="#" class="side-bar-tag">Design (20)</a>
+                        </div>
+                    </div>
+
+
+                        <div class="side-bar side-bar-topics">
+                            <div class="header">    
+                                <h4 class="title">✨ Trending topic</h4>
+                                <a href="#" class="view">View all</a>
+                            </div>
+
+                            <div class="content">
+
+                                <div class="topic-container container-hover">
+                                    <a href="#" class="link"></a>
+                                    <img src="https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kitchen">
+
+                                    <div class="text">
+                                        <a href="#" class="title">Automotive</a>
+                                        <span class="number">16 Articles</span>
+                                    </div>
+                                </div>
+
+                                <div class="topic-container container-hover">
+                                    <a href="#" class="link"></a>
+                                    <img src="https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kitchen">
+
+                                    <div class="text">
+                                        <a href="#" class="title">Automotive</a>
+                                        <span class="number">16 Articles</span>
+                                    </div>
+                                </div>
+
+                                <div class="topic-container container-hover">
+                                    <a href="#" class="link"></a>
+                                    <img src="https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kitchen">
+
+                                    <div class="text">
+                                        <a href="#" class="title">Automotive</a>
+                                        <span class="number">16 Articles</span>
+                                    </div>
+                                </div>
+
+                                <div class="topic-container container-hover">
+                                    <a href="#" class="link"></a>
+                                    <img src="https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kitchen">
+
+                                    <div class="text">
+                                        <a href="#" class="title">Automotive</a>
+                                        <span class="number">16 Articles</span>
+                                    </div>
+                                </div>
+
+                                <div class="topic-container container-hover">
+                                    <a href="#" class="link"></a>
+                                    <img src="https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kitchen">
+
+                                    <div class="text">
+                                        <a href="#" class="title">Automotive</a>
+                                        <span class="number">16 Articles</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    <div class="side-bar side-bar-authors">
+                        <div class="header">
+                            <h2 class="title">🎭 Discover Authors</h2>
+                            <a href="#" class="view">View All</a>
+                        </div>
+                        
+
+                        <div class="content">
+                            <div class="author-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Author" class="avatar">
+
+                                <div class="text">
+                                    <a href="#" class="name">Ben Englesen</a>
+                                    <span class="job">Author Job</span>
+                                </div>
+                            </div>
+
+                            <div class="author-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Author" class="avatar">
+
+                                <div class="text">
+                                    <a href="#" class="name">Ben Englesen</a>
+                                    <span class="job">Author Job</span>
+                                </div>
+                            </div>
+
+                            <div class="author-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Author" class="avatar">
+
+                                <div class="text">
+                                    <a href="#" class="name">Ben Englesen</a>
+                                    <span class="job">Author Job</span>
+                                </div>
+                            </div>
+
+                            <div class="author-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Author" class="avatar">
+
+                                <div class="text">
+                                    <a href="#" class="name">Ben Englesen</a>
+                                    <span class="job">Author Job</span>
+                                </div>
+                            </div>
+
+                            <div class="author-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Author" class="avatar">
+
+                                <div class="text">
+                                    <a href="#" class="name">Ben Englesen</a>
+                                    <span class="job">Author Job</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="side-bar side-bar-posts">
+                        <div class="header">
+                            <h2 class="title">🎯 Popular Posts</h2>
+                            <a href="#" class="view">View All</a>
+                        </div>
+                        
+
+                        <div class="content">
+
+                            <div class="post-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <div class="text">
+                                    <div class="author-info">
+                                        <img src="https://images.unsplash.com/photo-1625897428517-7e2062829a26?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                        <a href="#" class="name">Sarah Brown</a>
+                                        <span class="date"> . May 20, 2021</span>
+                                    </div>
+
+                                    <a href="#" class="title">New tools and advocacy support Black pregnant and postpartum mothers to save lives</a>
+                                </div>
+
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Music">
+                                </div>
+
+                            </div>
+
+                            <div class="post-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <div class="text">
+                                    <div class="author-info">
+                                        <img src="https://images.unsplash.com/photo-1625897428517-7e2062829a26?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                        <a href="#" class="name">Sarah Brown</a>
+                                        <span class="date"> . May 20, 2021</span>
+                                    </div>
+
+                                    <a href="#" class="title">New tools and advocacy support Black pregnant and postpartum mothers to save lives</a>
+                                </div>
+
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Music">
+                                </div>
+
+                            </div>
+
+                            <div class="post-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <div class="text">
+                                    <div class="author-info">
+                                        <img src="https://images.unsplash.com/photo-1625897428517-7e2062829a26?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                        <a href="#" class="name">Sarah Brown</a>
+                                        <span class="date"> . May 20, 2021</span>
+                                    </div>
+
+                                    <a href="#" class="title">New tools and advocacy support Black pregnant and postpartum mothers to save lives</a>
+                                </div>
+
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Music">
+                                </div>
+
+                            </div>
+
+                            <div class="post-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <div class="text">
+                                    <div class="author-info">
+                                        <img src="https://images.unsplash.com/photo-1625897428517-7e2062829a26?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                        <a href="#" class="name">Sarah Brown</a>
+                                        <span class="date"> . May 20, 2021</span>
+                                    </div>
+
+                                    <a href="#" class="title">New tools and advocacy support Black pregnant and postpartum mothers to save lives</a>
+                                </div>
+
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Music">
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+               </div>
+            </div>
+
+    </section>
+</main>
+
+
+<!-- Comment section -->
+<section class="article responses">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <h4 class="title">Responses (14)</h4>
+
+                    <div class="comment-container">
+                        <textarea name="comment" id="comment" placeholder="Add to discussion"></textarea>
+                        <button class="submit response-btn">Submit</button>
+                        <button class="cancel response-btn">Cancel</button>
+                    </div>
+        
+                    <div class="responses-container">
+                        <div class="response-container">
+                            <div class="response">
+                                <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29uJTIwZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Person" class="avatar">
+                                <div class="content">
+                                    <div class="author-info">
+                                        <a href="#" class="name">Birrell Chariot</a>
+                                        <span class="date"> . May 20, 2021</span>
+                                    </div>
+                                    <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi libero neque sapiente tempore debitis aliquam culpa natus sit voluptas earum!</p>
+                                    <div class="social-media">
+                                        <span class="likes"><i class="far fa-heart"></i> 12</span>
+                                        <span class="comments show-comment"> <i class="fas fa-reply"> </i> Reply</span>
+                                    </div>
+                                    <div class="comment-container">
+                                        <textarea name="comment" id="comment" placeholder="Add to discussion"></textarea>
+                                        <button class="submit response-btn">Submit</button>
+                                        <button class="cancel response-btn hide-comment">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="response reply">
+                                <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29uJTIwZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Person" class="avatar">
+                                <div class="content">
+                                    <div class="author-info">
+                                        <a href="#" class="name">Birrell Chariot</a>
+                                        <span class="date"> . May 20, 2021</span>
+                                    </div>
+                                    <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi libero neque sapiente tempore debitis aliquam culpa natus sit voluptas earum!</p>
+                                    <div class="social-media">
+                                        <span class="likes"><i class="far fa-heart"></i> 12</span>
+                                        <span class="comments show-comment"> <i class="fas fa-reply"> </i> Reply</span>
+                                    </div>
+                                    <div class="comment-container">
+                                        <textarea name="comment" id="comment" placeholder="Add to discussion"></textarea>
+                                        <button class="submit response-btn">Submit</button>
+                                        <button class="cancel response-btn hide-comment">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-- MODAL (popup) -->
+<div class="modal modal-report">
+    <div class="modal-content">
+        <span class="close"> <i class="fas fa-times"></i></span>
+        <h2 class="title">Report Abuse</h2>
+        <ul class="reasons">
+            <li> <button class="active">Voilence <i class="fas fa-check"></i></button></li>
+            <li> <button>Trouble <i class="fas fa-check"></i></button> </li>
+            <li> <button>Spam <i class="fas fa-check"></i></button> </li>
+            <li> <button>Other <i class="fas fa-check"></i></button> </li>
+        </ul>
+        <div class="message">
+            <h4>Message</h4>
+            <p class="description">Please provide any additional information or context that will help us understand and handle the situation.</p>
+            <textarea></textarea>
+            <button class="submit response-btn">Submit</button>
+            <button class="cancel response-btn">Cancel</button>
+        </div>
+    </div> 
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-horizontal">
+                <ul>
+                    <a href="#" class="footer-logo">LOGO</a>
+                    <li> <a href="#"> <i class="fab fa-facebook-square"></i> <span>Facebook</span> </a></li>
+                    <li> <a href="#"> <i class="fab fa-twitter-square"></i> <span>Twitter</span></a> </li>
+                    <li> <a href="#"> <i class="fab fa-instagram-square"></i> <span>Instagram</span> </a> </li>
+                    <li> <a href="#"> <i class="fab fa-youtube-square"></i> <span>Youtube</span></a> </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            
+
+
+        </div>
+    </div>
+</footer>
+<!-- Footer END -->
+
+    <!-- Javascript -->
+    <script src="Assets/Javascript/singleTemp1.js"></script>
+    <script src="Assets/Javascript/main.js"></script>
+
+</body>
+</html>

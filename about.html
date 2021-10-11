@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="Assets/Sass/vendors/bootstrap.css">
+        <script src="Assets/Sass/vendors/bootstrap.js"></script>
+    
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/8b6fd05b4e.js" crossorigin="anonymous"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="Assets/Sass/styles.css">
+
+    <title> Archive || Blog Magazine React Template </title>
+</head>
+<body class="main-theme">
+    <!-- NAVBAR -->
+    <header>
+        <div class="bars"><i class="fas fa-bars"></i></div>
+        <a class="logo" href="#"><h1>LOGO</h1></a>
+        <ul id="navbar">
+
+            <!-- Buttons (signup, themes, and search bar) for the side-navbar that appears on smaller screens -->
+            <div class="mobile nav-buttons">  
+
+                <div class="search-bar-container"> 
+                    <button class="mobile-signup-btn">Sign up</button> 
+                    <input type="text" name="mobile-search-bar" id="mobile-search-bar" placeholder="Search for...">
+                    <span class="search-icon"><i class="fas fa-search"></i></span>
+                </div>
+                     
+            </div>
+
+
+            <button class="mobile cross"><i class="fas fa-times"></i></button>
+            <a class="mobile logo" href="#"><h1>LOGO</h1></a>
+            <li class="drop drop-one">
+                <a>Home <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-one">
+                    <ul>
+                        <li><a href="index.html">Default Demo</a> </li>
+                        <li><a href="home2.html">Home Demo 2</a> </li>
+                        <li><a href="home3.html">Home Demo 3</a> </li>
+                        <li><a href="home4.html">Home Demo 4</a> </li>
+
+                    </ul>
+                </div>
+            <li class="drop drop-two">
+                <a>Templates <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-two">
+                    <ul>
+                        <li><a href="archive.html">Archive Page</a></li>
+                        <li><a href="archiveAudio.html">Archive Audio</a></li>
+                        <li><a href="archiveVideo.html">Archive Video</a></li>
+
+                        <li class="subdrop">
+                            <a class="drop-link">Author Page <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="Author1.html">Author Page 1</a></li>
+                                    <li><a href="Author2.html">Author Page 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+    
+                        <li class="subdrop">
+                            <a class="drop-link">Search Page <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="Search1.html">Search Page 1</a></li>
+                                    <li><a href="Search2.html">Search Page 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="subdrop">
+                            <a class="drop-link">Single Template <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="SingleTemp1.html">Single Template 1</a></li>
+                                    <li><a href="SingleTemp1Sidebar.html">Template 1 sidebar</a></li>
+                                    <li><a href="SingleTemp2.html">Single Template 2</a></li>
+                                    <li><a href="SingleTemp2WithSidebar.html">Template 2 sidebar</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="singleGallery.html">Single Gallery</a></li>
+                        <li><a href="singleAudio.html">Single Audio</a></li>
+                        <li><a href="singleVideo.html">Single Video</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="drop drop-three">
+                <a>Other pages <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-three">
+                    <ul>
+                        <li><a href="about.html" class="inner-nav-active">About</a></li>
+                        <li><a href="contactUs.html">Contact us</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="signup.html">Signup</a></li>
+                        <li><a href="forgotPassword.html">Forgot Password</a></li>
+
+                        <li class="subdrop">
+                            <a class="drop-link">Dashboard <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="dashboardPosts.html">Posts</a></li>
+                                    <li><a href="dashboardEditProfile.html">Edit Profile</a></li>
+                                    <li><a href="dashboardSubscription.html">Subscription</a></li>
+                                    <li><a href="dashboardBillingAddress.html">Billing Address</a></li>
+                                    <li><a href="dashboardSubmitPost.html">Submit Post</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="subscription.html">Subscription</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="nav-buttons">     
+            
+            <li class="nav-search">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            <input type="text" name="search-bar" id="search-bar" placeholder="Search for...">
+        </li>
+            <li><button class="signup-btn">Sign up</button></li>            
+        </ul>
+        
+    </header>
+<!-- NAVBAR END -->
+
+
+<main>
+
+    <section class="section-about">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="red-circle circle"></div>
+                    <div class="blue-circle circle"></div>
+                    
+                    <h2 class="main-title">👋 About Us.</h2>
+                    <div class="description">We’re impartial and independent, and every day we create distinctive, world-class programmes and content which inform, educate and entertain millions of people in the around the world.</div>
+                </div>
+
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="image">
+                    <img src="https://chisnghiax.com/ncmaz/static/media/about-hero-right.534fc28b.png" alt="Collage of images">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-founders">
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="main-title">⛱ Founder</h2>
+                <h4 class="secondary-title">We’re impartial and independent, and every day we create distinctive, world-class programmes and content</h4>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Founder">
+                        </div>
+
+                        <div class="text">
+                            <div class="name">Danien Jame</div>
+                            <div class="description">Co-founder and Chief Executive</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Founder">
+                        </div>
+
+                        <div class="text">
+                            <div class="name">Danien Jame</div>
+                            <div class="description">Co-founder and Chief Executive</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Founder">
+                        </div>
+
+                        <div class="text">
+                            <div class="name">Danien Jame</div>
+                            <div class="description">Co-founder and Chief Executive</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" alt="Founder">
+                        </div>
+
+                        <div class="text">
+                            <div class="name">Danien Jame</div>
+                            <div class="description">Co-founder and Chief Executive</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-facts section-blue">
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="main-title">🚀 Fast Facts</h2>
+                <h4 class="secondary-title">We’re impartial and independent, and every day we create distinctive, world-class programmes and content</h4>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="fact-card">
+                            <div class="title">10 million</div>
+                            <div class="description">Articles have been public around the world (as of Sept. 30, 2021)</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="fact-card">
+                            <div class="title">100,000</div>
+                            <div class="description">Registered users account (as of Sept. 30, 2021)</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="fact-card">
+                            <div class="title">220+</div>
+                            <div class="description">Countries and regions have our presence (as of Sept. 30, 2021)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-fourteen">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-12">
+                        <div class="text">
+
+                        <h2 class="main-title">Join our newsletter 🎉</h2>
+                        <h4 class="secondary-title">Read and share new perspectives on just about any topic. Everyone’s welcome.</h4>
+                        <div class="list-item">
+                            <span class="tag tag-red">01</span> <span>Get more discount</span> 
+                        </div>
+                        <div class="list-item">
+                            <span class="tag tag-blue">02</span> <span>Get premium magazines</span>
+
+                    </div>
+                        <div class="input">
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                        <button> <i class="fas fa-arrow-right"></i> </button>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-7 col-sm-12">
+                        <img src="https://chisnghiax.com/ncmaz/static/media/SVG-subcribe2.efb832b2.png" alt="Author Drawing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-horizontal">
+                <ul>
+                    <a href="#" class="footer-logo">LOGO</a>
+                    <li> <a href="#"> <i class="fab fa-facebook-square"></i> <span>Facebook</span> </a></li>
+                    <li> <a href="#"> <i class="fab fa-twitter-square"></i> <span>Twitter</span></a> </li>
+                    <li> <a href="#"> <i class="fab fa-instagram-square"></i> <span>Instagram</span> </a> </li>
+                    <li> <a href="#"> <i class="fab fa-youtube-square"></i> <span>Youtube</span></a> </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            
+
+
+        </div>
+    </div>
+</footer>
+<!-- Footer END -->
+
+
+    <!-- Javascript -->
+    <script src="Assets/Javascript/main.js"></script>
+    <script src="Assets/Javascript/slick.js"></script>
+
+</body>
+</html>

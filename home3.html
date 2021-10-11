@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="Assets/Sass/vendors/bootstrap.css">
+        <script src="Assets/Sass/vendors/bootstrap.js"></script>
+    
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/8b6fd05b4e.js" crossorigin="anonymous"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="Assets/Sass/styles.css">
+        
+
+    <title> Home Demo 3 || Blog Magazine React Template </title>
+</head>
+<body class="home-three">
+    <!-- NAVBAR -->
+    <header>
+        <div class="bars"><i class="fas fa-bars"></i></div>
+        <a class="logo" href="index.html"><h1>LOGO</h1></a>
+        <ul id="navbar">
+
+            <!-- Buttons (signup, themes, and search bar) for the side-navbar that appears on smaller screens -->
+            <div class="mobile nav-buttons">  
+
+                <div class="search-bar-container"> 
+                    <button class="mobile-signup-btn">Sign up</button> 
+                    <input type="text" name="mobile-search-bar" id="mobile-search-bar" placeholder="Search for...">
+                    <span class="search-icon"><i class="fas fa-search"></i></span>
+                </div>
+                     
+            </div>
+
+
+            <button class="mobile cross"><i class="fas fa-times"></i></button>
+            <a class="mobile logo" href="index.html"><h1>LOGO</h1></a>
+            <li class="drop drop-one">
+                <a>Home <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-one">
+                    <ul>
+                        <li><a href="index.html">Default Demo</a> </li>
+                        <li><a href="home2.html">Home Demo 2</a> </li>
+                        <li><a href="home3.html" class="inner-nav-active">Home Demo 3</a> </li>
+                        <li><a href="home4.html">Home Demo 4</a> </li>
+                    </ul>
+                </div>
+            </li>
+           
+            <li class="drop drop-two">
+                <a>Templates <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-two">
+                    <ul>
+                        <li><a href="archive.html">Archive Page</a></li>
+                        <li><a href="archiveAudio.html">Archive Audio</a></li>
+                        <li><a href="archiveVideo.html">Archive Video</a></li>
+
+                        <li class="subdrop">
+                            <a class="drop-link">Author Page <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="Author1.html">Author Page 1</a></li>
+                                    <li><a href="Author2.html">Author Page 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+    
+                        <li class="subdrop">
+                            <a class="drop-link">Search Page <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="Search1.html">Search Page 1</a></li>
+                                    <li><a href="Search2.html">Search Page 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="subdrop">
+                            <a class="drop-link">Single Template <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="SingleTemp1.html">Single Template 1</a></li>
+                                    <li><a href="SingleTemp1Sidebar.html">Template 1 sidebar</a></li>
+                                    <li><a href="SingleTemp2.html">Single Template 2</a></li>
+                                    <li><a href="SingleTemp2WithSidebar.html">Template 2 sidebar</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="singleGallery.html">Single Gallery</a></li>
+                        <li><a href="singleAudio.html">Single Audio</a></li>
+                        <li><a href="singleVideo.html">Single Video</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="drop drop-three">
+                <a>Other pages <i class="fas fa-chevron-down"></i></a>
+                <div class="menu menu-three">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contactUs.html">Contact us</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="signup.html">Signup</a></li>
+                        <li><a href="forgotPassword.html">Forgot Password</a></li>
+
+                        <li class="subdrop">
+                            <a class="drop-link">Dashboard <i class="fas fa-chevron-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="dashboardPosts.html">Posts</a></li>
+                                    <li><a href="dashboardEditProfile.html">Edit Profile</a></li>
+                                    <li><a href="dashboardSubscription.html">Subscription</a></li>
+                                    <li><a href="dashboardBillingAddress.html">Billing Address</a></li>
+                                    <li><a href="dashboardSubmitPost.html">Submit Post</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="subscription.html">Subscription</a></li>
+                    </ul>
+                </div>
+            </li >
+        </ul>
+
+        <ul class="nav-buttons">     
+            
+            <li class="nav-search">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            <input type="text" name="search-bar" id="search-bar" placeholder="Search for...">
+        </li>
+            <li><button class="signup-btn">Sign up</button></li>            
+        </ul>
+        
+    </header>
+<!-- NAVBAR END -->
+
+
+<!-- Main Content -->
+<main id="main">
+
+    <section class="section-about home-three-header">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="red-circle circle"></div>
+                    <div class="blue-circle circle"></div>
+                    
+                    <h2 class="main-title">Far from face <br> but not from heart</h2>
+                    <div class="description">Let stay at home and share with everyone the most beautiful stories in your hometown 🎈</div>
+
+                    <a href="Login.html" class="read-more">Getting Started</a>
+                </div>
+
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="image">
+                    <img src="https://chisnghiax.com/ncmaz/static/media/about-hero-right.534fc28b.png" alt="Collage of images">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-topics home-three-topics">
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="main-title">Top trending topics</h2>
+                <h4 class="secondary-title">Discover over 100 topics</h4>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="topic-card">
+                            <a href="#" class="link"></a>
+                            <a href="#" class="tag tag-blue"> #1 </a>
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80" alt="Plant" class="topic-image">
+                            <span class="topic-name">Garden</span>
+                            <span class="topic-number">13 Articles</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="topic-card">
+                            <a href="#" class="link"></a>
+                            <a href="#" class="tag tag-yellow"> #2 </a>
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80" alt="Plant" class="topic-image">
+                            <span class="topic-name">Garden</span>
+                            <span class="topic-number">13 Articles</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="topic-card">
+                            <a href="#" class="link"></a>
+                            <a href="#" class="tag tag-dark-red"> #3 </a>
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80" alt="Plant" class="topic-image">
+                            <span class="topic-name">Garden</span>
+                            <span class="topic-number">13 Articles</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="topic-card">
+                            <a href="#" class="link"></a>
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80" alt="Plant" class="topic-image">
+                            <span class="topic-name">Garden</span>
+                            <span class="topic-number">13 Articles</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="topic-card">
+                            <a href="#" class="link"></a>
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80" alt="Plant" class="topic-image">
+                            <span class="topic-name">Garden</span>
+                            <span class="topic-number">13 Articles</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="topic-card">
+                            <a href="#" class="link"></a>
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80" alt="Plant" class="topic-image">
+                            <span class="topic-name">Garden</span>
+                            <span class="topic-number">13 Articles</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="topic-card">
+                            <a href="#" class="link"></a>
+                            
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80" alt="Plant" class="topic-image">
+                            <span class="topic-name">Garden</span>
+                            <span class="topic-number">13 Articles</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="topic-card">
+                            <a href="#" class="link"></a>
+                            
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80" alt="Plant" class="topic-image">
+                            <span class="topic-name">Garden</span>
+                            <span class="topic-number">13 Articles</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="topic-card">
+                            <a href="#" class="link"></a>
+                            
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80" alt="Plant" class="topic-image">
+                            <span class="topic-name">Garden</span>
+                            <span class="topic-number">13 Articles</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="topic-card">
+                            <a href="#" class="link"></a>
+                            
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80" alt="Plant" class="topic-image">
+                            <span class="topic-name">Garden</span>
+                            <span class="topic-number">13 Articles</span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-five section-blue home-three-editors-pick">
+        <div class="wrapper">
+            <div class="container">
+
+                <h2 class="main-title">🧩 Editor Picks</h2>
+                <h4 class="secondary-title">Discover the most outstanding articles in all topics of life.</h4>
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="article-card-main">
+                             <a class="article-card-main-link" href="#"></a> 
+                            <ul class="social-media-links">
+                                <li> <a href="#"> <i class="fab fa-facebook-f"> </a></i></li>
+                                <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fab fa-linkedin-in"> </a></i></li>
+                                <li><a href="#"> <i class="fab fa-instagram"> </a></i></li>
+                            </ul>
+                            <img src="https://images.unsplash.com/photo-1501493870936-9c2e41625521?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1045&q=80" alt="Tree" class="article-card-main-image">
+
+                            <a class="tag tag-red" href="#"> Electronics </a>
+
+                            <h4 class="article-card-main-title">microsoft announces a five year commitment to create oppurtunities for helping people with crippling disabilities.</h4>
+
+                            <p class="article-card-main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae.</p>
+
+                            <img class="article-card-main-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="author">
+                            <div class="author-info">
+                            <a class="name" href="#"> Pilifant Vern </a> <br>
+                            <span class="date">May 20, 2021</span>
+                            </div>
+
+                            <div class="social-media">
+                                <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                            </div>
+                            <span class="bookmark">3 min read <i class="far fa-bookmark"> </i></span>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 col-sm-12"> 
+
+                        <div class="article-card-secondary">
+                            <a class="article-card-secondary-link" href="#"></a>
+                            <div class="info-container">
+                                <h4 class="article-card-secondary-title"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatum omnis odio aliquid culpa. </a></h4>
+                                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos suscipit culpa soluta incidunt. Vero nesciunt ipsam totam, voluptatem commodi accusantium?</div>
+                                <div class="author-info">
+                                    <img class="avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="author">
+                                    <a class="name" href="#"> Pilifant Vern</a> 
+                                    <span class="date"> . May 20, 2021</span>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1587381420844-7bc5f4feec02?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Scenery">
+                                <span class="play-icon"><i class="fas fa-play"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="article-card-secondary">
+                            <a class="article-card-secondary-link" href="#"></a>
+                            <div class="info-container">
+                                <h4 class="article-card-secondary-title"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatum omnis odio aliquid culpa. </a></h4>
+                                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos suscipit culpa soluta incidunt. Vero nesciunt ipsam totam, voluptatem commodi accusantium?</div>
+                                <div class="author-info">
+                                    <img class="avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="author">
+                                    <a class="name" href="#"> Pilifant Vern</a> 
+                                    <span class="date"> . May 20, 2021</span>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1587381420844-7bc5f4feec02?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Scenery">
+                                <span class="play-icon"><i class="fas fa-play"></i></span>
+                            </div>
+                        </div>
+
+
+                        <div class="article-card-secondary">
+                            <a class="article-card-secondary-link" href="#"></a>
+                            <div class="info-container">
+                                <h4 class="article-card-secondary-title"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatum omnis odio aliquid culpa. </a></h4>
+                                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos suscipit culpa soluta incidunt. Vero nesciunt ipsam totam, voluptatem commodi accusantium?</div>
+                                <div class="author-info">
+                                    <img class="avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="author">
+                                    <a class="name" href="#"> Pilifant Vern</a> 
+                                    <span class="date"> . May 20, 2021</span>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1587381420844-7bc5f4feec02?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Scenery">
+                                <span class="play-icon"><i class="fas fa-play"></i></span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-three home-two-articles home-three-articles-tall">
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="main-title">Top trending topics</h2>
+                <h4 class="secondary-title">Discover 233 topics</h4>
+                <div class="chevrons">
+                    <button class="prev-card"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-card"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <div class="slick slick-five">
+                    <div class="article-card-tall video-card">
+                        <a href="#" class="link"> </a>
+                        <div class="image image-container">
+                            <img src="https://images.unsplash.com/photo-1508923567004-3a6b8004f3d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW58ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/uQacIZj_xN0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <span class="play-icon"><i class="fas fa-play"></i></span>
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                            <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        </div>
+                            <div class="text">
+                                <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                                <div class="author-info">
+                                    <img src="https://media.istockphoto.com/photos/headshot-of-44-year-old-mixed-race-man-in-casual-polo-shirt-picture-id1264106963?b=1&k=20&m=1264106963&s=170667a&w=0&h=dLQliHpFkaweGQhiRfkNGkwsAPoKCEy9UWWk-m2iCCk=" alt="Author" class="avatar">
+                                    <a href="Author1.html" class="name">Tousy Vita</a>
+                                    <span class="date"> . May 20, 2021</span>
+                                </div>
+                            </div>  
+                    </div>
+
+                    <div class="article-card-tall video-card">
+                        <a href="#" class="link"> </a>
+                        <div class="image image-container">
+                            <img src="https://images.unsplash.com/photo-1508923567004-3a6b8004f3d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW58ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                            
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                            <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        </div>
+                            <div class="text">
+                                <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                                <div class="author-info">
+                                    <img src="https://media.istockphoto.com/photos/headshot-of-44-year-old-mixed-race-man-in-casual-polo-shirt-picture-id1264106963?b=1&k=20&m=1264106963&s=170667a&w=0&h=dLQliHpFkaweGQhiRfkNGkwsAPoKCEy9UWWk-m2iCCk=" alt="Author" class="avatar">
+                                    <a href="Author1.html" class="name">Tousy Vita</a>
+                                    <span class="date"> . May 20, 2021</span>
+                                </div>
+                            </div>  
+                    </div>
+
+                    <div class="article-card-tall video-card">
+                        <a href="#" class="link"> </a>
+                        <div class="image image-container">
+                            <img src="https://images.unsplash.com/photo-1508923567004-3a6b8004f3d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW58ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                            
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                            <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        </div>
+                            <div class="text">
+                                <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                                <div class="author-info">
+                                    <img src="https://media.istockphoto.com/photos/headshot-of-44-year-old-mixed-race-man-in-casual-polo-shirt-picture-id1264106963?b=1&k=20&m=1264106963&s=170667a&w=0&h=dLQliHpFkaweGQhiRfkNGkwsAPoKCEy9UWWk-m2iCCk=" alt="Author" class="avatar">
+                                    <a href="Author1.html" class="name">Tousy Vita</a>
+                                    <span class="date"> . May 20, 2021</span>
+                                </div>
+                            </div>  
+                    </div>
+
+                    <div class="article-card-tall video-card">
+                        <a href="#" class="link"> </a>
+                        <div class="image image-container">
+                            <img src="https://images.unsplash.com/photo-1508923567004-3a6b8004f3d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW58ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                            
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                            <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        </div>
+                            <div class="text">
+                                <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                                <div class="author-info">
+                                    <img src="https://media.istockphoto.com/photos/headshot-of-44-year-old-mixed-race-man-in-casual-polo-shirt-picture-id1264106963?b=1&k=20&m=1264106963&s=170667a&w=0&h=dLQliHpFkaweGQhiRfkNGkwsAPoKCEy9UWWk-m2iCCk=" alt="Author" class="avatar">
+                                    <a href="Author1.html" class="name">Tousy Vita</a>
+                                    <span class="date"> . May 20, 2021</span>
+                                </div>
+                            </div>  
+                    </div>
+
+                    <div class="article-card-tall video-card">
+                        <a href="#" class="link"> </a>
+                        <div class="image image-container">
+                            <img src="https://images.unsplash.com/photo-1508923567004-3a6b8004f3d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW58ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                            
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                            <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        </div>
+                            <div class="text">
+                                <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                                <div class="author-info">
+                                    <img src="https://media.istockphoto.com/photos/headshot-of-44-year-old-mixed-race-man-in-casual-polo-shirt-picture-id1264106963?b=1&k=20&m=1264106963&s=170667a&w=0&h=dLQliHpFkaweGQhiRfkNGkwsAPoKCEy9UWWk-m2iCCk=" alt="Author" class="avatar">
+                                    <a href="Author1.html" class="name">Tousy Vita</a>
+                                    <span class="date"> . May 20, 2021</span>
+                                </div>
+                            </div>  
+                    </div>
+
+                    <div class="article-card-tall video-card">
+                        <a href="#" class="link"> </a>
+                        <div class="image image-container">
+                            <img src="https://images.unsplash.com/photo-1508923567004-3a6b8004f3d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW58ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mountain" class="bg-img">
+                            
+                            <span class="bookmark"><i class="far fa-bookmark"> </i></span>
+                            <a href="archive.html" class="tag tag-dark-red">Jewlery</a>
+                        </div>
+                            <div class="text">
+                                <a href="SingleTemp1.html" class="title">How AI and teams are benfetting the littlest of patience</a>
+                                <div class="author-info">
+                                    <img src="https://media.istockphoto.com/photos/headshot-of-44-year-old-mixed-race-man-in-casual-polo-shirt-picture-id1264106963?b=1&k=20&m=1264106963&s=170667a&w=0&h=dLQliHpFkaweGQhiRfkNGkwsAPoKCEy9UWWk-m2iCCk=" alt="Author" class="avatar">
+                                    <a href="Author1.html" class="name">Tousy Vita</a>
+                                    <span class="date"> . May 20, 2021</span>
+                                </div>
+                            </div>  
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ads">
+        <div class="wrapper">
+            <div class="container">
+                <a class="ad"href="#">A.D.S</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-two section-blue">
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="main-title">Top authors of the month</h2>
+                <h4 class="secondary-title">Say hello to future creator potentials</h4>
+
+                
+                <div class="slick slick-one">
+                    <div class="author-card">
+                        <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                        <a class="author-link" href="Author1.html"></a>
+                        <div class="author-info">
+                            <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                            <span class="author-name">Friar Donna</span>
+                             <span class="author-handle">@Author job</span>
+                        </div>
+                    </div>
+
+                    <div class="author-card">
+                        <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                        <a class="author-link" href="Author1.html"></a>
+                        <div class="author-info">
+                            <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                            <span class="author-name">Friar Donna</span>
+                             <span class="author-handle">@Author job</span>
+                        </div>
+                    </div>
+
+                    <div class="author-card">
+                        <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                        <a class="author-link" href="Author1.html"></a>
+                        <div class="author-info">
+                            <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                            <span class="author-name">Friar Donna</span>
+                             <span class="author-handle">@Author job</span>
+                        </div>
+                    </div>
+                    
+                    <div class="author-card">
+                        <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                        <a class="author-link" href="Author1.html"></a>
+                        <div class="author-info">
+                            <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                            <span class="author-name">Friar Donna</span>
+                             <span class="author-handle">@Author job</span>
+                        </div>
+                    </div>
+
+                    <div class="author-card">
+                        <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                        <a class="author-link" href="Author1.html"></a>
+                        <div class="author-info">
+                            <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                            <span class="author-name">Friar Donna</span>
+                             <span class="author-handle">@Author job</span>
+                        </div>
+                    </div>
+
+                    <div class="author-card">
+                        <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                        <a class="author-link" href="Author1.html"></a>
+                        <div class="author-info">
+                            <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                            <span class="author-name">Friar Donna</span>
+                             <span class="author-handle">@Author job</span>
+                        </div>
+                    </div>
+
+                    <div class="author-card">
+                        <img src="https://images.pexels.com/photos/4066850/pexels-photo-4066850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yellow flower" class="bg">
+                        <a class="author-link" href="Author1.html"></a>
+                        <div class="author-info">
+                            <img src="Assets/images/face.jpg" alt="the authors image" class="author-image">
+                            <span class="author-name">Friar Donna</span>
+                             <span class="author-handle">@Author job</span>
+                        </div>
+                    </div>
+                </div>
+                 
+
+                <div class="chevrons">
+                    <button class="prev-card"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-card"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                </div>
+            </div>
+        
+    </section>
+
+    
+    <section class="section-fourteen">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-12">
+                        <div class="text">
+
+                        <h2 class="main-title">Join our newsletter 🎉</h2>
+                        <h4 class="secondary-title">Read and share new perspectives on just about any topic. Everyone’s welcome.</h4>
+                        <div class="list-item">
+                            <span class="tag tag-red">01</span> <span>Get more discount</span> 
+                        </div>
+                        <div class="list-item">
+                            <span class="tag tag-blue">02</span> <span>Get premium magazines</span>
+
+                    </div>
+                        <div class="input">
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                        <button> <i class="fas fa-arrow-right"></i> </button>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-7 col-sm-12">
+                        <img src="https://chisnghiax.com/ncmaz/static/media/SVG-subcribe2.efb832b2.png" alt="Author Drawing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-eight section-blue">
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="main-title">listen to podcasts live</h2>
+                <h4 class="secondary-title">click on music icon and enjoy the podcast!</h4>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="audio-card-big">
+                        <div class="image-container">
+                            <a href="#" class="tag tag-yellow">Industrial</a>
+                            <img src="https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="microphone" class="bg-img">
+
+                            <img src="Assets/images/audio lines.png" alt="audio lines" class="audio-lines">
+                            <span class="play-icon play-audio"><i class="fas fa-play"></i></span>
+                        </div>
+                        <div class="audio">
+                            <audio controls>
+                                <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" type="audio/ogg">
+                            </audio>
+                            <div class="close-audio"> <i class="fas fa-times"></i> </div>
+                        </div>
+
+                        <div class="podcast-card">
+                            <a class="title" href="#">Lenovo's smarter devices</a>
+                            <span class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt inventore culpa similique itaque quibusdam alias illum!</span>
+                            <div class="social-media">
+                                <span class="likes"><i class="fas fa-heart"></i> 3.4k</span>
+                                <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                            </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="audio-card-big">
+                        <div class="image-container">
+                            <a href="#" class="tag tag-yellow">Industrial</a>
+                            <img src="https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="microphone" class="bg-img">
+
+                            <img src="Assets/images/audio lines.png" alt="audio lines" class="audio-lines">
+                            <span class="play-icon play-audio"><i class="fas fa-play"></i></span>
+                        </div>
+                        <div class="audio">
+                            <audio controls>
+                                <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" type="audio/ogg">
+                            </audio>
+                            <div class="close-audio"> <i class="fas fa-times"></i> </div>
+                        </div>
+
+                        <div class="podcast-card">
+                            <a class="title" href="#">Lenovo's smarter devices</a>
+                            <span class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt inventore culpa similique itaque quibusdam alias illum!</span>
+                            <div class="social-media">
+                                <span class="likes"><i class="fas fa-heart"></i> 3.4k</span>
+                                <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                            </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="podcast-card-small">
+                                <div class="left">
+                                <img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="person holding guitar">
+                                    <div class="text">
+                                        <a class="title" href="#">DIYer and TV</a>
+                                        <span class="episodes">40 episodes . 110 minutes</span>
+                                    </div>
+                                </div>
+                                <span class="play-icon play-audio"><i class="fas fa-play"></i></span>
+                        </div>
+                        <div class="audio">
+                            <audio controls>
+                                <source src="https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg" type="audio/ogg">
+                            </audio>
+                            <div class="close-audio"> <i class="fas fa-times"></i> </div>
+                        </div>
+
+                        <div class="podcast-card-small">
+                            <div class="left">
+                            <img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="person holding guitar">
+                                <div class="text">
+                                    <a class="title" href="#">DIYer and TV</a>
+                                    <span class="episodes">40 episodes . 110 minutes</span>
+                                </div>
+                            </div>
+                            <span class="play-icon play-audio"><i class="fas fa-play"></i></span>
+                    </div>
+                    <div class="audio">
+                        <audio controls>
+                            <source src="https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg" type="audio/ogg">
+                        </audio>
+                        <div class="close-audio"> <i class="fas fa-times"></i> </div>
+                    </div>
+
+                    <div class="podcast-card-small">
+                        <div class="left">
+                        <img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="person holding guitar">
+                            <div class="text">
+                                <a class="title" href="#">DIYer and TV</a>
+                                <span class="episodes">40 episodes . 110 minutes</span>
+                            </div>
+                        </div>
+                        <span class="play-icon play-audio"><i class="fas fa-play"></i></span>
+                </div>
+                <div class="audio">
+                    <audio controls>
+                        <source src="https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg" type="audio/ogg">
+                    </audio>
+                    <div class="close-audio"> <i class="fas fa-times"></i> </div>
+                </div>
+
+                <div class="podcast-card-small">
+                    <div class="left">
+                    <img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="person holding guitar">
+                        <div class="text">
+                            <a class="title" href="#">DIYer and TV</a>
+                            <span class="episodes">40 episodes . 110 minutes</span>
+                        </div>
+                    </div>
+                    <span class="play-icon play-audio"><i class="fas fa-play"></i></span>
+                </div>
+                <div class="audio">
+                    <audio controls>
+                        <source src="https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg" type="audio/ogg">
+                    </audio>
+                    <div class="close-audio"> <i class="fas fa-times"></i> </div>
+                </div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section-fifteen">
+        <div class="container">
+            <h2 class="main-title">🎬 The Videos</h2>
+            <h4 class="secondary-title">Check out our hottest videos. View more and share more new perspectives on just about any topic. Everyone’s welcome.</h4>
+            <div class="row">
+                <div class="col-lg-9 col-md-12 col-sm-12">
+
+                    <div class="main-video">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/a5V6gdu5ih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" alt="Bird" class="main-video-img">
+
+                        <span class="play-icon"><i class="fas fa-play"></i></span>
+                    
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <ul>
+                        <div class="background"></div>
+                        <li class="active">
+                            <div class="side-video">
+
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/a5V6gdu5ih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" alt="Bird" class="main-video-img">
+
+                                <span class="play-icon"><i class="fas fa-play"></i></span>
+                            
+                            </div> 
+                        </li>
+
+                        <li>
+                            <div class="side-video">
+
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MuB7HHeuNbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                <img src="https://images.unsplash.com/photo-1577870736095-e88b9030dd68?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aWd1YW5hfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Iguana" class="main-video-img">
+
+                                <span class="play-icon"><i class="fas fa-play"></i></span>
+                            
+                            </div> 
+                        </li>
+
+                        <li>
+                            <div class="side-video">
+
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/a5V6gdu5ih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                <img src="https://images.unsplash.com/photo-1522735395567-43c00b2897a7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2luZG1pbGx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Windmills" class="main-video-img">
+
+                                <span class="play-icon"><i class="fas fa-play"></i></span>
+                            
+                            </div> 
+                        </li>
+
+                        <li>
+                            <div class="side-video">
+
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MuB7HHeuNbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                                <img src="https://images.unsplash.com/photo-1439405326854-014607f694d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8b2NlYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Ocean" class="main-video-img">
+
+                                <span class="play-icon"><i class="fas fa-play"></i></span>
+                            
+                            </div> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-sixteen">
+        <div class="container">
+            <h2 class="main-title">Latest Articles 🎈</h2>
+            <h4 class="secondary-title">Discover the most outstanding articles in all topics of life.</h4>
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+
+                    <div class="row">
+                       
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="home-two-side-article home-three-side-article">
+                                <div class="social-media">
+                                    <span class="likes"><i class="far fa-heart"></i> 3.4k</span>
+                                    <span class="comments"><i class="far fa-comment-dots"></i> 11</span>
+                                </div>
+                                <span class="bookmark"> <i class="far fa-bookmark"> </i></span>
+                                <a href="SingleTemp1.html" class="link"></a>
+                                <img src="https://images.unsplash.com/photo-1491406213019-05b162a72c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="Building" class="bg-img">
+                                <div class="article-info">
+                                    <div class="text">
+                                        <a href="archive.html" class="tag tag-red">Electronics</a>
+
+                                <a href="SingleTemp1.html" class="title">Lenovo’s smarter devices stoke professional passions</a>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="side-bar side-bar-tags">
+                        <div class="header">    
+                            <h4 class="title">🏷 Discover more tags</h4>
+                            <a href="#" class="view">View all</a>
+                        </div>
+
+                        <div class="content">
+                            <a href="#" class="side-bar-tag">Garden (13)</a>
+                            <a href="#" class="side-bar-tag">Industrial (13)</a>
+                            <a href="#" class="side-bar-tag">Electronics (13)</a>
+                            <a href="#" class="side-bar-tag">Jewelry (22)</a>
+                            <a href="#" class="side-bar-tag">Tools (19)</a>
+                            <a href="#" class="side-bar-tag">Automotive (15)</a>
+                            <a href="#" class="side-bar-tag">Toys (13)</a>
+                            <a href="#" class="side-bar-tag">Outdoors (17)</a>
+                            <a href="#" class="side-bar-tag">Design (20)</a>
+                            <a href="#" class="side-bar-tag">sports (14)</a>
+                            <a href="#" class="side-bar-tag">Beauty (13)</a>
+                            <a href="#" class="side-bar-tag">Garden (13)</a>
+                            <a href="#" class="side-bar-tag">Industrial (13)</a>
+                            <a href="#" class="side-bar-tag">Electronics (13)</a>
+                            <a href="#" class="side-bar-tag">Jewelry (22)</a>
+                            <a href="#" class="side-bar-tag">Tools (19)</a>
+                            <a href="#" class="side-bar-tag">Automotive (15)</a>
+                            <a href="#" class="side-bar-tag">Toys (13)</a>
+                            <a href="#" class="side-bar-tag">Outdoors (17)</a>
+                            <a href="#" class="side-bar-tag">Design (20)</a>
+                        </div>
+                    </div>
+
+
+                        <div class="side-bar side-bar-topics">
+                            <div class="header">    
+                                <h4 class="title">✨ Trending topic</h4>
+                                <a href="#" class="view">View all</a>
+                            </div>
+
+                            <div class="content">
+
+                                <div class="topic-container container-hover">
+                                    <a href="#" class="link"></a>
+                                    <img src="https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kitchen">
+
+                                    <div class="text">
+                                        <a href="#" class="title">Automotive</a>
+                                        <span class="number">16 Articles</span>
+                                    </div>
+                                </div>
+
+                                <div class="topic-container container-hover">
+                                    <a href="#" class="link"></a>
+                                    <img src="https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kitchen">
+
+                                    <div class="text">
+                                        <a href="#" class="title">Automotive</a>
+                                        <span class="number">16 Articles</span>
+                                    </div>
+                                </div>
+
+                                <div class="topic-container container-hover">
+                                    <a href="#" class="link"></a>
+                                    <img src="https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kitchen">
+
+                                    <div class="text">
+                                        <a href="#" class="title">Automotive</a>
+                                        <span class="number">16 Articles</span>
+                                    </div>
+                                </div>
+
+                                <div class="topic-container container-hover">
+                                    <a href="#" class="link"></a>
+                                    <img src="https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kitchen">
+
+                                    <div class="text">
+                                        <a href="#" class="title">Automotive</a>
+                                        <span class="number">16 Articles</span>
+                                    </div>
+                                </div>
+
+                                <div class="topic-container container-hover">
+                                    <a href="#" class="link"></a>
+                                    <img src="https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kitchen">
+
+                                    <div class="text">
+                                        <a href="#" class="title">Automotive</a>
+                                        <span class="number">16 Articles</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    <div class="side-bar side-bar-authors">
+                        <div class="header">
+                            <h2 class="title">🎭 Discover Authors</h2>
+                            <a href="#" class="view">View All</a>
+                        </div>
+                        
+
+                        <div class="content">
+                            <div class="author-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Author" class="avatar">
+
+                                <div class="text">
+                                    <a href="#" class="name">Ben Englesen</a>
+                                    <span class="job">Author Job</span>
+                                </div>
+                            </div>
+
+                            <div class="author-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Author" class="avatar">
+
+                                <div class="text">
+                                    <a href="#" class="name">Ben Englesen</a>
+                                    <span class="job">Author Job</span>
+                                </div>
+                            </div>
+
+                            <div class="author-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Author" class="avatar">
+
+                                <div class="text">
+                                    <a href="#" class="name">Ben Englesen</a>
+                                    <span class="job">Author Job</span>
+                                </div>
+                            </div>
+
+                            <div class="author-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Author" class="avatar">
+
+                                <div class="text">
+                                    <a href="#" class="name">Ben Englesen</a>
+                                    <span class="job">Author Job</span>
+                                </div>
+                            </div>
+
+                            <div class="author-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Author" class="avatar">
+
+                                <div class="text">
+                                    <a href="#" class="name">Ben Englesen</a>
+                                    <span class="job">Author Job</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="side-bar side-bar-posts">
+                        <div class="header">
+                            <h2 class="title">🎯 Popular Posts</h2>
+                            <a href="#" class="view">View All</a>
+                        </div>
+                        
+
+                        <div class="content">
+
+                            <div class="post-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <div class="text">
+                                    <div class="author-info">
+                                        <img src="https://images.unsplash.com/photo-1625897428517-7e2062829a26?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                        <a href="#" class="name">Sarah Brown</a>
+                                        <span class="date"> . May 20, 2021</span>
+                                    </div>
+
+                                    <a href="#" class="title">New tools and advocacy support Black pregnant and postpartum mothers to save lives</a>
+                                </div>
+
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Music">
+                                </div>
+
+                            </div>
+
+                            <div class="post-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <div class="text">
+                                    <div class="author-info">
+                                        <img src="https://images.unsplash.com/photo-1625897428517-7e2062829a26?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                        <a href="#" class="name">Sarah Brown</a>
+                                        <span class="date"> . May 20, 2021</span>
+                                    </div>
+
+                                    <a href="#" class="title">New tools and advocacy support Black pregnant and postpartum mothers to save lives</a>
+                                </div>
+
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Music">
+                                </div>
+
+                            </div>
+
+                            <div class="post-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <div class="text">
+                                    <div class="author-info">
+                                        <img src="https://images.unsplash.com/photo-1625897428517-7e2062829a26?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                        <a href="#" class="name">Sarah Brown</a>
+                                        <span class="date"> . May 20, 2021</span>
+                                    </div>
+
+                                    <a href="#" class="title">New tools and advocacy support Black pregnant and postpartum mothers to save lives</a>
+                                </div>
+
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Music">
+                                </div>
+
+                            </div>
+
+                            <div class="post-container container-hover">
+                                <a href="#" class="link"></a>   
+                                <div class="text">
+                                    <div class="author-info">
+                                        <img src="https://images.unsplash.com/photo-1625897428517-7e2062829a26?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Author" class="avatar">
+                                        <a href="#" class="name">Sarah Brown</a>
+                                        <span class="date"> . May 20, 2021</span>
+                                    </div>
+
+                                    <a href="#" class="title">New tools and advocacy support Black pregnant and postpartum mothers to save lives</a>
+                                </div>
+
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Music">
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-horizontal">
+                <ul>
+                    <a href="#" class="footer-logo">LOGO</a>
+                    <li> <a href="#"> <i class="fab fa-facebook-square"></i> <span>Facebook</span> </a></li>
+                    <li> <a href="#"> <i class="fab fa-twitter-square"></i> <span>Twitter</span></a> </li>
+                    <li> <a href="#"> <i class="fab fa-instagram-square"></i> <span>Instagram</span> </a> </li>
+                    <li> <a href="#"> <i class="fab fa-youtube-square"></i> <span>Youtube</span></a> </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4 class="title">Getting Started</h4>
+                <ul>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Relaease Notes</a></li>
+                    <li><a href="#">Upgrade Guide</a></li>
+                    <li><a href="#">Browser Support</a></li>
+                    <li><a href="#">Edit Support</a></li>
+                    <li><a href="#">Utility-first</a></li>
+                    <li><a href="#">Dark Mode</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+
+            
+
+
+        </div>
+    </div>
+</footer>
+
+<!-- Footer END -->
+</div>
+    <!-- SlickJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <!-- Javascript -->
+    <script src="Assets/Javascript/main.js"></script>
+    <script src="Assets/Javascript/slick.js"></script>
+
+</body>
+</html>
