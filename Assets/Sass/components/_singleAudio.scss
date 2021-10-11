@@ -1,0 +1,231 @@
+.single-audio-header{
+    margin-top: 88px;
+    .wrapper{
+        .blue-bg{
+            width: 100%;
+            height: 250px;
+            background: $secondary-bg;
+        }
+        .container{
+            margin-top: -200px;
+
+            .header-content{
+                width: 94%;
+                margin: auto;
+                background: $menu-bg;
+                box-shadow: 0 15px 20px -5px $border-light;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                padding: 60px;
+                border-radius: 40px;
+                .image{
+                    width: 25%;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 30px;
+                    cursor: pointer;
+                    &:hover{
+                        .play-icon{
+                            transform: scale(1.1);
+                        }
+                    }
+                    img{
+                        width: 280px;
+                        height: 280px;
+                        object-fit: cover;
+                        border-radius: 1000px;
+                        filter: brightness(40%);
+                    }
+
+                    .play-icon{
+                        position: absolute;
+                        width:80px;
+                        height: 80px;
+                        font-size: 30px;
+                        background: rgba(0, 0, 0, .50);
+                    }
+                }
+
+                .text{
+                    width: 70%;
+
+                    .above-title{
+                        .tag{
+                            margin-right: 20px;
+                            &:hover{
+                                background: $tag-blue-bg;
+                                color: $tag-blue-text;
+                            }
+                        }
+                        .date{
+                            color: $text-one;
+                            font-size: 18px;
+                        }
+                    }
+
+                    .title{
+                        font-size: 50px;
+                        color: $text-dark;
+                        font-weight: 600;
+                        margin: 10px 0 20px 0;
+                    }
+
+                    .description{
+                        font-size: 18px;
+                        color: $text-one;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                // all the buttons (likes, comments, shre, more.. etc)
+            .buttons{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .social-media{
+                    margin-right: 10px;
+                    border-right: 1px solid $border-light;
+                    padding-right: 10px;
+                    .likes, .comments{
+                        background: $secondary-bg;
+                    }
+                }
+
+                @import 'bookmark';
+                .bookmark{
+                    color: $text-dark;
+                    background: $secondary-bg;
+                    margin: 0 3px;
+
+                    &:hover{
+                        filter: brightness(90%);
+                    }
+                }
+
+                .dropdown-container{
+                    position: relative;
+                    .dropdown{
+                        visibility: hidden;
+                        position: absolute;
+                        top: 120%;
+                        right: 0;
+                        box-shadow: 0 0 2px $border-dark;
+                        padding: 10px 4px;
+                        background: $menu-bg;
+                        list-style: none;
+                        border-radius: 12px;
+                        width: 200px;
+                        z-index: 2;
+                        transition: all .2s;
+                        transform: scale(.9);
+                        transform-origin: top right;
+                        opacity: 0;
+                        li{
+                            margin: 2px 4px;
+                            padding: 6px 10px;
+                            border-radius: 8px;
+                            display: block;
+
+                            &:hover{
+                                cursor: pointer;
+                                background: $icon-bg-transparent;
+                            }
+                        }
+                    }
+                    .dropdown-btn{
+                        border: none;
+                        color: $text-dark;
+                        border-radius: 100px;
+                        width: 40px;
+                        height: 40px;
+                        margin: 0 3px;
+                        background: $secondary-bg;
+                        &:hover{
+                            filter: brightness(90%);
+                        }
+                        &:focus ~ .dropdown{
+                           visibility: visible;
+                           transform: scale(1);
+                           opacity: 1;
+
+                        }
+                    }
+
+                }
+                
+            }
+            }
+        }
+    }
+}
+
+@media(max-width: 1023px){
+    .single-audio-header{
+        .header-content{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .image{
+                margin-bottom: 50px;
+            }
+
+            .buttons{
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px){
+.single-audio-header{
+   .wrapper{
+       margin-bottom: -300px;
+   }
+    .header-content{
+
+        padding: 20px 0 !important;
+        .image{
+            img{
+                width: 150px !important;
+                height: 150px !important;
+            }
+        }
+        .above-title{
+            .tag{
+                display: block;
+                margin: auto !important;
+                margin-bottom: 10px !important;
+            }
+
+            .date{
+                font-size: 14px !important;
+            }
+        }
+
+        .title{
+            font-size: 30px !important;
+        }
+        .description{
+            font-size: 14px !important;
+
+        }
+
+        .social-media{
+            .comments{
+                display: none !important;
+            }
+        }
+        
+    }
+}
+}

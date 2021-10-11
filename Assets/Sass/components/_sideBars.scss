@@ -1,0 +1,260 @@
+//general styling for all sidebars
+.side-bar{
+    background: $secondary-bg;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 10px;
+
+    .container-hover{
+        &:hover{
+            background: $border-lighter;
+        }
+    }
+    .header{
+        padding: 20px;
+        padding-bottom: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .title{
+            font-size: 20px;
+            color: $text-dark;
+        }
+
+        .view{
+            font-size: 18px;
+            margin-bottom: 4px;
+            color: $logo;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0;
+        }
+    }
+
+}
+
+//specific styling for the tags side bar
+.side-bar-tags{
+
+    .content{
+        border-top: 1px solid $border-lighter;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        // indivdual tags
+        .side-bar-tag{
+            display: inline-block;
+            background: $menu-bg;
+            color: $text-main;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 14px;
+            &:hover{
+                box-shadow: 0 0 2px $border-light;
+            }
+        }
+    }
+}
+
+//specific styling for the topics side bar
+.side-bar-topics{
+    .content{
+        display: flex;
+        flex-direction: column;
+
+        .topic-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            border-top: 1px solid $border-lighter;
+            padding: 6px 0;
+            position: relative;
+
+            .link{
+                position: absolute;
+                inset: 0;
+            }
+            img{
+                height: 60px;
+                width: 60px;
+                border-radius: 20px;
+                object-fit: cover;
+                margin: 12px;
+            }
+
+            .text{
+                display: flex;
+                flex-direction: column;
+
+                .title{
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $text-dark;
+                    position: relative; //positioned relative to make it hoverable
+                    &:hover{
+                        color: $link-hovered;
+                    }
+                }
+
+                .number{
+                    font-size: 14px;
+                    color: $text-light;
+                }
+            }
+        }
+    }
+}
+
+//author side bar
+.side-bar-authors{
+    .content{
+        display: flex;
+        flex-direction: column;
+        
+        .author-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            border-top: 1px solid $border-lighter;
+            padding: 12px 0;
+            position: relative;
+            
+            .avatar{
+                border-radius: 100px;
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                margin: 10px;
+            }
+
+            .name{
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                color: $text-dark;
+                display: block;
+            }
+
+            .job{
+                font-size: 14px;
+                color: $text-light;
+            }
+        }
+    }
+}
+
+// posts side bar
+.side-bar-posts{
+    flex-direction: column;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+
+        .post-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-top: 1px solid $border-lighter;
+            position: relative;
+            .link{
+                position: absolute;
+                inset: 0;
+            }
+            .text{
+                width: 72%;
+                .author-info{
+                    margin-bottom: 6px;
+                    .avatar{
+                        border-radius: 200px;
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        margin-right: 5px;
+                    }
+
+                    .name{
+                        text-decoration: none;
+                        color: $text-dark;
+                        position: relative;
+                        font-size: 14px;
+                        font-weight: 500;
+
+                        &:hover{
+                            color: $black;
+                        }
+                    }
+
+                    .date{
+                        color: $text-light;
+                        font-size: 12px;
+                    }
+                }
+
+                .title{
+                    text-decoration: none;
+                    color: $text-dark;
+                    position: relative;
+                    font-size: 16px;
+                    font-weight: 500;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    margin-bottom: 6px;
+                    &:hover{
+                        color: $link-hovered;
+                    }
+                }
+            }
+            .image{
+                overflow: hidden;
+                border-radius: 14px;
+                width: 85px;
+                height: 85px;
+                position: relative;
+                img{
+                    position: absolute;
+                    inset: 0;
+                    width: 85px;
+                    height: 85px;
+                    object-fit: cover;
+                    transition: transform .2s ease;
+
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1024px){
+    .side-bar{
+        .date{
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    .side-bar{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}

@@ -1,0 +1,31 @@
+.section-facts{
+    .wrapper{
+        padding: 0;
+        .container{
+
+            @import 'headersLeft';
+            .secondary-title{
+                max-width: 600px;
+            }
+
+            .fact-card{
+                box-shadow: 0 0 1px $border-light;
+                padding: 20px;
+                background: $menu-bg;
+                border-radius: 20px;
+
+                .title{
+                    font-size: 38px;
+                    font-weight: 600;
+                    color: $text-dark;
+                }
+
+                .description{
+                    font-size: 18px;
+                    color: $text-one;
+                }
+            }
+        }
+    }
+    
+}

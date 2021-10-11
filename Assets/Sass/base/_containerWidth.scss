@@ -1,0 +1,45 @@
+@media(min-width: 1023px){
+    section{
+        .wrapper{
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+    
+            .container{
+                padding-right: 10px !important;
+                padding-left: 10px !important;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 1024px)
+{main{
+    .wrapper{
+        max-width: 100%;
+    }
+    .container{
+        max-width: 100%;
+        margin: auto;
+        padding: 40px;
+    }
+    .padding-30{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+}
+
+@media(min-width: 768px){
+    main{
+        .wrapper{
+           margin: auto;
+           max-width: 100%;
+
+    }
+        .container{      
+            margin: auto;
+        }
+
+    }
+}

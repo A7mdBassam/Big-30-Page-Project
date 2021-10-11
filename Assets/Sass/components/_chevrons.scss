@@ -1,0 +1,15 @@
+.chevrons{
+    text-align: center;
+
+.next-card, .prev-card{
+    border: none;
+    margin-top: 40px;
+    width: 42px;
+    height: 42px; 
+    border-radius: 100px;
+    background-color: $menu-bg;
+    color: $text-one;
+    border: 1px solid $border-light;
+    margin: 0 4px;
+}
+}

@@ -1,0 +1,38 @@
+.section-founders{
+    .wrapper{
+        .container{
+            padding-top: 60px;
+            padding-bottom: 60px;
+            @import 'headersLeft';
+            .secondary-title{
+                max-width: 600px;
+            }
+
+            .image{
+                width: 100%;
+                height: 300px;
+                margin-bottom: 14px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; 
+                    border-radius: 12px;
+                }
+            }
+
+            .text{
+                margin-bottom: 50px;
+                .name{
+                    font-size: 22px;
+                    font-weight:600;
+                    color: $text-dark;
+                }
+
+                .description{
+                    font-size: 18px;
+                    color: $text-one;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.popular{
+    border: 2px solid $logo !important;
+    box-shadow: none !important;
+    .popular-tag{
+        background: $logo;
+        color: $text-bright;
+        width: fit-content;
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        border-radius: 100px;
+        padding: 2px 14px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .submit{
+        background-color: $logo !important;
+        color: $text-bright !important;
+    }
+}
+.subscription-card{
+    border-radius: 20px;
+    padding: 40px 10px 40px 20px;
+    box-shadow: 0 0 2px $border-light;
+    position: relative;
+    height: 420px;
+    .name{
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $text-one;
+        font-weight: 500;
+    }
+
+    .price{
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        .price-time{
+            font-weight: 400;
+            color: $text-one;
+            font-size: 25px;
+            margin-left: -8px;
+        }
+    }
+
+    .features{
+        list-style: none;
+        padding: 0px;
+        margin-bottom: 70px;
+        li{
+            margin: 20px 0;
+            font-size: 16px;
+            font-weight: 500;
+            .fa-check{
+                color: $logo;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .submit{
+        width: 94%;
+        display: block;
+        border: none;
+        background-color: $menu-bg;
+        border: 2px solid $menu-bg;
+        box-shadow: 0 0 2px $border-light;
+        border-radius: 1000px;
+        padding: 10px 0 11px 0;
+        font-weight: 500;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &:hover{
+            background: $blue-bg;
+            border: 2px solid $blue-bg;
+        }
+
+        &:focus{
+            box-shadow: 0 0 0 2px $logo;
+        }
+    }
+}

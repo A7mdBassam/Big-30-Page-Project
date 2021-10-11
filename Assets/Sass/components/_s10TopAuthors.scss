@@ -1,0 +1,92 @@
+.section-ten{
+    .wrapper{
+        .container{
+            padding-top: 60px;
+            .flex-container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            @import 'headersLeft';
+            .top-author-card{
+                display: flex;
+                flex-direction: column;
+                width: 220px;
+                height: 270px;
+                justify-content: start;
+                box-shadow: 0 0 2px $border-light;
+                align-items: center;
+                padding-top: 30px;
+                border-radius: 30px;
+                position: relative;
+                margin: 14px;
+                transition: box-shadow .1s;
+                &:hover{
+                    box-shadow: 0 15px 20px -5px $border-light;
+                }
+
+                .link{
+                    position: absolute;
+                    inset: 0;
+                    display: block;
+                }
+
+                .avatar{
+                    border-radius: 100px;
+                    width: 86px;
+                    height: 86px;
+                    object-fit:cover;
+                    object-position: top;
+                    margin-bottom: 10px;
+                }
+
+                .name{
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 2px;
+                }
+
+                //handle (text below name begins with @)
+                .handle{
+                    color: $text-one;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+
+                .arrow{
+                    background: $secondary-bg;
+                    border-radius: 100px;
+                    padding: 4px 20px;
+                    color: $text-dark;
+                    text-decoration: none;
+
+                    .fa-arrow-right{
+                        color: $orange;
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    .section-ten{
+        .container{
+            padding: 20px;
+        }
+        .top-author-card{
+            margin: 10px !important;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .section-ten{
+        .container{
+            padding: 12px;
+        }
+    }
+}

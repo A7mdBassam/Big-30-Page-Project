@@ -1,0 +1,121 @@
+
+.section-login{
+    .wrapper{
+        .container{
+            .row{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .col-lg-5{
+
+                    .signup-using{
+                        list-style:none;
+                        padding-left: 0;
+
+                        li{
+                            margin: 10px;
+                            a{
+                                display: block;
+                                text-decoration: none;
+                                color: $text-dark;
+                                background: $blue-bg;
+                                padding: 10px 16px;
+                                font-weight: 500;
+                                border-radius: 10px; 
+                                transition: transform .1s ease;
+                                &:hover{
+                                    transform: translateY(-3px);
+                                }
+                            }
+                        }
+                    }
+
+                    .mid-point{
+                        position: relative;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                        .horizontal-line{
+                            height: 1px;
+                            width: 100%;
+                            display: block;
+                            box-shadow: 0 0 2px $border-light;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+
+                        .or{
+                            position: relative;
+                            background: $menu-bg;
+                            width: 50px;
+                            margin: auto; 
+                            display: block;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .login-form{
+                        padding: 10px;
+                        text-align: left;
+
+                        input, label{
+                            display: block;
+                            width: 100%;
+                        }
+
+                        .flex-between{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+
+                            label{
+                                width: fit-content;
+                            }
+
+                            .forgot-password{
+                                text-decoration: none;
+                                color: $link-hovered;
+                            }
+                        }
+
+                        label{
+                            display: block;
+                            margin-bottom: 6px;
+                            font-weight: 400;
+                            font-size: 18px;
+                        }
+    
+                        input{
+                            display: block;
+                            border-radius: 1000px;
+                            width: 100%;
+                            border: none;
+                            border: 1px solid $border-light;
+                            outline: none;
+                            padding: 6px 20px;
+                            margin-bottom: 20px;
+                            transition: all .1s ease;
+                            &:focus{
+                                box-shadow: 0 0 0 3px $logo-transparent;
+                            }
+                        }
+    
+                        .submit-btn{
+                            background-color: $logo;
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: $text-bright;
+                            padding: 10px;
+                            margin-top: 20px;
+                            border: 2px solid $menu-bg;
+    
+                            &:focus{
+                                box-shadow: 0 0 0 2px $logo;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

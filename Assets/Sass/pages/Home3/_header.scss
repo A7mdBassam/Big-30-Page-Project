@@ -1,0 +1,43 @@
+.home-three-header{
+    .wrapper{
+        padding-left: 50px ;
+        padding-right: 50px ;
+        margin-bottom: 60px;
+    }
+    .read-more{
+        text-decoration: none;
+        border: 2px solid $logo;
+        background: $logo;
+        padding: 8px 26px 10px 26px;
+        font-size: 20px;
+        font-weight: 500;
+        color: $text-bright;
+        border-radius: 1000px;
+        display: block;
+        width: fit-content;
+        margin-bottom: 60px;
+
+        &:focus{
+            border: 2px solid $menu-bg;
+            box-shadow: 0 0 0 2px $logo;
+        }
+    }
+}
+
+@media(max-width: 767px){
+.home-three-header{
+    .read-more{
+        margin: 50px auto;
+    }
+}
+}
+
+@media(max-width: 576px){
+    .main-title{
+        font-size: 30px !important;
+    }
+
+    .secondary-title, .description{
+        font-size: 18px !important;
+    }
+}

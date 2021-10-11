@@ -1,0 +1,518 @@
+//NAVBAR
+header{
+    background-color: $nav-main; 
+    position: fixed;
+    top: 0;
+    width: 100vw !important;
+    box-shadow: 0px 0px 2px $border-light;
+    height: 88px;
+    backdrop-filter: blur(40px);
+    z-index: 10;
+    transition: all .3s;
+    a{
+        cursor: pointer;
+    }
+    .logo{
+        position: absolute;
+        left: 40px;
+        top: 16px;
+        color: $logo;
+
+    }
+
+    .mobile{
+        display: none;
+    }
+    // hamburger menu icon
+    .bars{
+        color: $text-one;
+        display: none;
+    }
+}
+
+//MAIN NAVBAR ITEMS
+#navbar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    //border: 2px dashed yellow;
+    width: 80%;
+    position: relative;
+    left: 160px;
+    top: 14px;
+    padding-left: 0;
+    
+    > li{
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 30px;
+        margin: 15px 6px;
+
+        > a{
+            padding: 9px 18px;
+            padding-bottom: 12px;
+            text-decoration: none;
+            color: $text-one;
+            border-radius: 40px;
+
+            &:hover{
+                background: $hovered;
+            }
+        }
+    }
+}
+//the arrow next to the text
+.fa-chevron-down{
+    font-size: 8px;  
+}
+
+//dropdown menus in the navbar
+.col-menu-one, .col-menu-two, .menu-one, .menu-two, .menu-three{
+    min-width: 240px;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    top: 60px;
+    left: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(4px);
+    flex-direction: row;
+    box-shadow: 0px 0px 2px $border-light;
+    border-radius: 10px;
+    background: $menu-bg;
+    padding: 10px;
+    transition: all .18s ease-out;
+    
+    ul{
+        list-style: none;
+        padding: 10px; 
+
+        li{
+            a{
+                font-size: 15px;
+                color: $text-one;
+                text-decoration: none;
+            }
+
+            .drop-link{
+                color: $text-one;
+                cursor: pointer;
+            }
+        }
+        
+
+        h4{
+            font-size: 16px;
+            margin-top: 6px;
+            color: $text-main;
+        }
+    }
+    img{
+        width: 150px;
+        border-radius: 12px;
+    }
+}
+
+//shifting the 'fewer cols' menu to the right
+.col-menu-two{
+    left: 120px;
+}
+
+
+
+.menu-one, .menu-two, .menu-three{
+    padding: 0 !important;
+    li{
+        margin: 10px 0;
+        padding: 0;
+        a{
+            //border: 1px solid green;
+            padding: 5px 16px 6px 16px;
+            width: 220px;
+            display:block;
+            border-radius: 8px;
+            &:hover{
+                background: $hovered;
+            }
+        }
+    }
+}
+
+//making dropdown menus appear on hover
+.col-drop-one:hover .col-menu-one, .col-drop-two:hover .col-menu-two, .drop-one:hover .menu-one,
+.drop-two:hover .menu-two, .drop-three:hover .menu-three{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+// adding pathways so the menus dont close when you move the mouse to hover on them
+.col-menu-one::before, .col-menu-two::before, .menu-one::before, .menu-two::before, .menu-three::before{
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.drop-two, .drop-three{
+    position: relative;
+    .menu-two, .menu-three{
+        top: 45px;
+        left: 0;
+    }
+}
+
+// making the ative page bold on navbar
+.inner-nav-active{
+    font-weight: 700;
+    color: $text-main !important;
+}
+.nav-active{
+    font-weight: 700;
+    background-color: $hovered 
+}
+
+
+//dropdown menus within dropdown menus..
+.subdrop{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    right: -200px;
+    top: 0;
+    min-width: 200px;
+    height: fit-content;
+    transform: translateX(60px) scale(0);
+    background: $menu-bg;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #b1b5bb85;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -20px;
+        width: 100%;
+        height: 36px;
+        z-index: -100 !important;
+        //border: 2px solid green;
+    }
+
+
+}
+
+.subdrop:hover .submenu{
+    opacity: 1;   
+    transform: scale(1) translateX(60px); 
+}
+
+
+//buttons for themes, searching, and signing in
+.nav-buttons{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    #theme, #search-bar{
+        display:none;
+    }
+    list-style: none;
+    padding:none;
+    display: flex;
+    flex-direction: row;
+
+    .nav-search:focus-within #search-bar{
+        display: block;
+        position: absolute;
+        bottom: -50px;
+        height: 40px;
+        width: 400px;
+        left: -200px;
+        border-radius: 100px;
+        border: none;
+        outline: none;
+        box-shadow: 0px 0px 0px 3px $logo-transparent;
+        padding: 2px 14px 6px 14px;
+        background: $menu-bg
+    }
+
+    li{
+        margin: 0 10px;
+        .search-btn, .theme-btn{
+            height: 45px;
+            width: 45px;
+            background: none;
+            color: $text-one;
+            border: none;
+            border-radius: 100px;
+            font-size: x-large;
+            position: relative;
+            &:hover{
+                cursor: pointer;
+                background: $hovered
+            }
+        }
+
+        .theme-btn{
+            text-align: center;
+            padding-top: 4px;
+            font-size: x-large;
+            
+        }
+
+
+        .signup-btn{
+            border: none;
+            outline: none;
+            transform: translateX(10px);
+            width: 110px;
+            height: 46px;
+            border-radius: 100px;
+            padding: 0;
+            padding-bottom: 3px;
+            font-weight: 500;
+            color: #eee;
+            background: $logo;
+            transition: all .1s;
+            &:focus{
+                border: 2px solid #eee;
+                box-shadow: 0px 0px 0px 2px $logo;
+            }
+            
+        }
+    }
+}
+
+//on smaller screens
+@media(max-width: 1100px){
+
+    //disabling effect (bold font and background) on the currently active page
+    .nav-active{
+        font-weight: normal;
+        background: none;
+    }
+    .inner-nav-active{
+        color: $text-one !important;
+        font-weight: normal;
+    }
+
+    //NAVBAR
+    header{
+
+        .logo{
+            position: absolute;
+            font-size: 24px;
+            left: 10px;
+            top: 25px;
+        }
+        .nav-buttons{
+            display: none;
+        }
+
+        .nav-buttons{
+            flex-direction: row;
+            input[type="checkbox"]{
+                display: none;
+            }
+        }
+     
+        .bars{
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            font-size: 20px;
+        }
+
+        #mobile-search-bar{
+            display: block;
+        }
+        #navbar{
+            display: block;
+            //border: 2px dashed red;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            padding-top: 120px;
+            width: 300px;
+            height: 100vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background: #fff;
+            transform: translateX(-600px);
+            transition: all .3s ease-out;
+            box-shadow: 0px 0px 3px #5F84C1;
+            
+            //LOGO inside side navbar
+            .mobile{
+            display: block;
+            left: 12px;
+            top: 18px;
+            
+            }
+
+            .nav-buttons{
+                display:flex;
+                flex-direction: column;
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+
+                .mobile-signup-btn{
+                    border: none;
+                    outline: none;
+                    transform: translateX(10px);
+                    width: 110px;
+                    height: 46px;
+                    border-radius: 100px;
+                    padding: 0;
+                    padding-bottom: 3px;
+                    font-weight: 500;
+                    color: #eee;
+                    background: #4338CA;
+                    transition: all .1s;
+                    margin-left: 0px;
+                    margin-bottom: 10px;;
+                    &:focus{
+                        border: 2px solid $nav-main;
+                        box-shadow: 0px 0px 0px 2px #4338CA;
+                    }
+                }
+
+    
+                .search-bar-container{
+                #mobile-search-bar{
+                    border: none;
+                    outline: none;
+                    border-radius: 100px;
+                    height: 33px;
+                    background-color: $menu-bg;
+                    width: 250px;
+                    margin: 10px;
+                    margin-left: 4px;
+                    margin-top: 6px;
+                    padding: 0 0 3px 38px; 
+                    box-shadow: 0px 0px 2px rgba(170, 170, 170, 0.856);
+                    &:focus{
+                        box-shadow: 0px 0px 1px 2px #5F84C1;
+                    }
+                }
+                .search-icon{
+                    position: absolute;
+                    bottom: 14px;
+                    left: 14px;
+                }
+            }
+            .theme-btn{
+                position: absolute;
+                border-radius: 100px;
+                background-color: $hovered;
+                padding: 5px 2px 0px 4px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                left: 140px;
+                top: 6px;
+                font-size: larger;
+            }
+            }
+            .cross{
+                border:none;
+                background: none;
+                color: $text-one;
+                font-size: large;
+                position: absolute;
+                left: 260px;
+                top: 20px;
+            }
+            li{
+                //background:rgba(255, 99, 71, 0.623);
+                border-radius: 0;
+                a{
+                    //color: green;
+                    // border: 2px solid green;
+                    border-radius: 6px;
+                    padding: 0;
+                    display: block;
+                    padding: 6px;
+                    height: 40px;
+
+                }
+                
+            }
+        .col-menu-one, .col-menu-two{
+            position: relative;
+            box-shadow: none;
+            width: 200px;
+            //border: 2px solid red;
+            visibility: visible;
+            transform: translateY(0);
+            opacity: 1;
+            background: none;
+            top: -8px;
+            left: 30px;
+            display: none;
+            img{
+                display: none;
+            }
+
+        }
+        .col-menu-two{
+            left: 30px;
+        }
+
+        .drop-one{
+            border-top: 1px solid #F3F4F6;
+        }
+        .drop-three{
+            border-bottom: 1px solid #F3F4F6;
+        }
+        .menu-one, .menu-two, .menu-three{
+            position: relative;
+            margin-top: 14px;
+            width: 200px;
+            //border: 2px solid red;
+            visibility: visible;
+            transform: translateY(0);
+            opacity: 1;
+            background: none;
+            top: -10px;
+            left: 30px;
+            box-shadow: none;
+            display: none;
+        }
+
+        .submenu{
+            position: relative;
+            visibility: visible;
+            opacity: 1;
+            left: -20px;
+            background: none;
+            box-shadow: none;
+            display: none;
+        }
+
+
+        }
+    }
+}
+
+//fixing issues while transforming between small and large screens.
+@media(min-width: 1100px){
+    body{
+        overflow-y: scroll !important;
+    }
+    #navbar{
+        transform: translateX(0) !important;
+    }
+}

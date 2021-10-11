@@ -1,0 +1,100 @@
+
+.section-two{
+    @import 'headersCenter';
+    .container{
+        max-width: 100%;
+    
+
+    //ARROWS
+    .chevrons{
+        text-align: center;
+
+    .next-card, .prev-card{
+        border: none;
+        width: 42px;
+        height: 42px; 
+        border-radius: 100px;
+        background-color: $menu-bg;
+        color: $text-one;
+        box-shadow: 0 0 2px $border-dark;
+    }
+}
+
+    //CARD
+    .author-card{
+        height: 300px;
+        position: relative;
+        display: inline-block;
+        border-radius: 20px;
+        margin: 10px;
+        box-shadow: 0 0 2px $border-light;
+        overflow: hidden;
+        
+        //a way of adding box shadow on hover with transitions (Good Performance)
+        &:hover{
+            box-shadow: 0px 15px 20px -8px $border-light;;
+        }
+
+        // a link that covers the entire card
+        .author-link{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+
+        //Background image
+        .bg{
+            width: 100%;
+            height: 92%;
+            z-index: -1;
+            position: absolute;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        //the info includes: name, image, and handle (author job).
+        .author-info{
+            background: $menu-bg;
+            position: relative;
+            top: 60%;
+            height: 40%;
+            text-align: center;
+
+            .author-image{
+                border-radius: 200px;
+                width: 66px;
+                height: 66px;
+                border: 2px solid #eee;
+                transform: translateY(-50%);
+            }
+
+            .author-name{
+                font-size: 18px;
+                color: $text-main;
+                display: block;
+                margin-top: -20px;
+                font-weight: 500;
+            }
+
+            .author-handle{
+                font-size: 16px;
+                color: $text-one;
+                opacity: 90%;
+            }
+    }
+        
+    }
+}
+}
+
+@media(max-width: 576px)
+{
+    .section-two{
+        .author-card{
+            height: 450px
+        }
+    }
+}

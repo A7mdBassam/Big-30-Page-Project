@@ -1,0 +1,209 @@
+.single-gallery-header{
+    margin-top: 140px;
+    .wrapper{
+        .container{
+            padding: 30px 50px !important;
+            height: 100%;
+            .flex-space-between{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .main-title{
+                margin-top: 10px;
+                font-size: 50px;
+                color: $text-dark;
+                max-width: 800px;
+                margin-bottom: 40px;
+            }
+
+            .author-info{
+                display: flex;
+                flex-direction: row;
+                .avatar{
+                    border-radius: 100px;
+                    width: 50px;
+                    height: 50px;
+                    object-fit: cover;
+                    margin-right: 10px;
+                }
+
+                .author-text{
+                    display: flex;
+                    flex-direction: column;
+
+                    .name{
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-decoration: none;
+                        color: $text-dark;
+                    }
+
+                    .date{
+                        font-size: 14px;
+                        color: $text-light;
+
+                        .read-time{
+                            color: $text-light;
+                        }
+                    }
+                }
+            }
+
+            // all the buttons (likes, comments, shre, more.. etc)
+            .buttons{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .social-media{
+                    margin-right: 10px;
+                    border-right: 1px solid $border-light;
+                    padding-right: 10px;
+                    .likes, .comments{
+                        background: $secondary-bg;
+                    }
+                }
+
+                @import 'bookmark';
+                .bookmark{
+                    color: $text-dark;
+                    background: $secondary-bg;
+                    margin: 0 3px;
+
+                    &:hover{
+                        filter: brightness(90%);
+                    }
+                }
+
+                .dropdown-container{
+                    position: relative;
+                    .dropdown{
+                        visibility: hidden;
+                        position: absolute;
+                        top: 120%;
+                        right: 0;
+                        box-shadow: 0 0 2px $border-dark;
+                        padding: 10px 4px;
+                        background: $menu-bg;
+                        list-style: none;
+                        border-radius: 12px;
+                        width: 200px;
+                        z-index: 2;
+                        transition: all .2s;
+                        transform: scale(.9);
+                        transform-origin: top right;
+                        opacity: 0;
+                        li{
+                            margin: 2px 4px;
+                            padding: 6px 10px;
+                            border-radius: 8px;
+                            display: block;
+
+                            &:hover{
+                                cursor: pointer;
+                                background: $icon-bg-transparent;
+                            }
+                        }
+                    }
+                    .dropdown-btn{
+                        border: none;
+                        color: $text-dark;
+                        border-radius: 100px;
+                        width: 40px;
+                        height: 40px;
+                        margin: 0 3px;
+                        background: $secondary-bg;
+                        &:hover{
+                            filter: brightness(90%);
+                        }
+                        &:focus ~ .dropdown{
+                           visibility: visible;
+                           transform: scale(1);
+                           opacity: 1;
+
+                        }
+                    }
+
+                }
+                
+            }
+
+            .images-container{
+                margin-top: 40px;
+                height: 550px;
+                img{
+                    width: 100%;
+                    margin: 6px;
+                    border-radius: 14px;
+                    object-fit: cover;
+                    height: 260px;
+                }
+
+                .col-lg-6{
+                    margin-right: -5px;
+                    img{
+                        height: 531px;
+                    }
+                }
+
+                .col-lg-3{
+                    margin: 0 -6px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1023px){
+    .single-gallery-header{
+        .wrapper{
+            .container{
+                margin-bottom: 550px;
+                padding: 10px !important;
+
+                .main-title{
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    display: -webkit-box;
+                    overflow: hidden;
+                }
+                .images-container{
+                    padding: 0; 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left:  auto !important;
+                    margin-right: auto !important;
+
+                    .col-lg-6{
+                        margin: auto;
+                        padding-left: 0;
+                        img{
+                            height: 531px;
+                        }
+                    }
+    
+                    .col-lg-3{
+                        padding-left: 0;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .single-gallery-header{
+        .wrapper{
+            margin-bottom: 1100px;
+            .container{
+                .main-title{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+}

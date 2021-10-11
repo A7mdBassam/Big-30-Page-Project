@@ -1,0 +1,23 @@
+.main-theme{
+    h2.main-title{
+        font-size: 36px;
+        margin-bottom: 14px;
+        font-weight: 700;
+        color: $text-main;
+    }
+    h4.secondary-title{
+        color: $text-one;
+        font-size: 22px;
+        margin-bottom: 60px;
+    }
+    
+    @media(max-width: 768px){
+        .main-title{
+            font-size: 30px !important;
+        }
+    
+        .secondary-title{
+            font-size: 18px !important;
+        }
+    }
+}

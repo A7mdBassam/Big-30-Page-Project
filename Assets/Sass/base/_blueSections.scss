@@ -1,0 +1,29 @@
+.section-blue{
+    margin-top: 50px;
+    .wrapper{
+        padding: 60px 40px;
+        background: $secondary-bg;
+        border-radius: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .section-blue{
+        .wrapper{
+            padding: 60px 0;
+            .container{
+                padding:0;
+            }
+        }
+    }
+}
+@media(max-width: 576px){
+
+        .section-blue{
+            .slick{
+            margin: auto;
+        }
+    }
+}

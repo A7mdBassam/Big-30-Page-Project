@@ -1,0 +1,366 @@
+.section-dashboard{
+    .wrapper{
+        .container{
+
+            .dashboard-list{
+                font-size: 18px;
+                padding: 10px;
+                list-style: none;
+                li{
+                    a{
+                        color: $text-one;
+                        text-decoration: none;
+                        display: block;
+                        margin: 6px 4px;
+                        padding: 8px 16px;
+                        border-radius: 10px;
+                        font-weight: 500;
+
+                    }
+
+                    .active{
+                        color: $text-dark;
+                        background: $blue-bg;
+                    }
+                }
+            }
+
+            // making the content overflow on smaller screens (horizontal scrolling)
+            .col-lg-9{
+                overflow-x: auto;
+                .scroll-x{
+                    min-width: 700px;
+                }
+            }
+
+
+            .dashboard-content{
+                margin-top: 20px;
+                padding: 10px;
+                font-size: 18px;
+
+                a{
+                    color: $link-hovered;
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+
+                .welcome{
+                    margin-bottom: 10px;
+                }
+
+
+                .post{
+                    border-bottom: 1px solid $border-light;
+                    padding-bottom: 10px;
+                    padding-top: 5px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+                    margin: 4px 10px;
+                    .align-left{
+                        display: flex;
+                        direction: row;
+                        max-width: 50%;
+                        align-items: center;
+                    }
+                    .title{
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-left: 10px;
+                    }
+
+                    .image{
+                        border-radius: 10px;
+                        height: 70px;
+                        width: 70px;
+                        object-fit: cover;
+                        margin-right: 10px;
+                    }
+
+                    .status{
+                        padding: 3px 10px 4px 10px;
+                        border-radius: 10px;
+                        font-weight: 500;
+                    }
+
+                    .status-active{
+                        color: $blue-bg;
+                        background: $logo;
+                    }
+
+                    .status-offline{
+                        color: $border-dark;
+                        background: $border-light;
+                    }
+
+                    .buttons{
+                        .edit{
+                            border: none;
+                            background-color: transparent;
+                            color: $tag-dark-red-text;
+                            font-weight: 500;
+                            border-right: 1px solid $border-light;
+                        }
+
+                        .delete{
+                            border: none;
+                            background: transparent;
+                            color: $tag-blue-text;
+                            font-weight: 500;
+                            border-left: 1px solid $border-light;
+                        }
+                    }
+                }
+
+                .border-bottom-none{
+                    border-bottom: transparent;
+                }
+
+                .edit-profile{
+                    padding: 10px;
+                    .half{
+                        display: flex;
+                        flex-direction: row;
+                            
+                        .input{
+                            width: 100%;
+                            padding: 10px;
+                        }
+                    }
+
+                    label{
+                        display: block;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-bottom: 6px;
+                    }
+
+                    input{
+                        width: 100%;
+                        border: 1px solid $border-light;
+                        outline: none;
+                        padding: 4px 14px 5px 14px;
+                        font-size: 16px;
+                        border-radius: 1000px;
+                        transition: all .1s;
+                        &:focus{
+                            box-shadow: 0 0 1px 3px $logo-transparent; 
+                        }
+                    }
+
+                    .email{
+                        padding: 10px;
+                    }
+
+                    .submit-btn{
+                        border: 3px solid red;
+                        background: $logo;
+                        color: $text-bright;
+                        font-weight: 500;
+                        font-size: 20px;
+                        border: 2px solid $menu-bg;
+                        margin-top: 30px;
+                        padding: 8px 0 11px 0;
+                        &:focus{
+                            box-shadow: 0 0 0 2px $logo;
+                        }
+                    }
+                   
+                }
+
+                .submit-post{
+                    input, textarea{
+                        margin-bottom: 20px;
+                    }
+
+                    textarea{
+                        padding: 6px 14px;
+                    }
+
+                    .category{
+                        margin-bottom: 20px !important;
+                        .title{
+                            width: 100%;
+                            font-weight: 500 !important;
+                        }
+                        
+                        .input-category{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            margin-bottom: 20px;
+                            input{
+                                width: auto;
+
+                                &:focus{
+                                    box-shadow: none;
+                                }
+                            }
+                            label{
+                                display: inline;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+                    .content{
+                        height: 340px;
+                        margin-bottom: 20px;
+                    }
+                    .upload{
+                        display: none;
+                    }
+                    .upload-label{
+                        text-align: center;
+                        border: 2px solid $menu-bg;
+                        background-color: $logo;
+                        color: $text-bright;
+                        border-radius: 1000px;
+                        padding: 6px 12px 7px 12px;
+                        margin: 20px 0;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .subscriptions{                    
+                    .title{
+                        text-align: left !important;
+                        margin-bottom: 0;
+                        .main-title{
+                            text-align: left;
+                            font-size: 24px;
+                            margin-bottom: 4px;
+                        }
+
+                        .secondary-title{
+                            text-align: left;
+                            font-size: 18px;
+                        }
+                     }
+                    .subscriptions-table{
+                        box-shadow: none;
+                        margin-top: 0;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        .type{
+                            width:40%;
+                            margin: 20px 0;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: $text-one;
+                        }
+
+                        .info{
+                            width: 50%;
+                            margin: 20px 0;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: $text-dark;
+                            
+                        }
+                        
+                    }
+                }
+
+                .billing{
+                    .dropdown-container{
+                        position: relative;
+                        width: 100%;
+                       
+                        .dropdown{
+                            visibility: hidden;
+                            position: absolute;
+                            top: 120%;
+                            left: 0;
+                            border: 1px solid $border-light-transparent;
+                            padding: 10px 4px;
+                            background: $menu-bg;
+                            list-style: none;
+                            border-radius: 12px;
+                            width: 100%;
+                            z-index: 2;
+                            transition: all .2s;
+                            transform: scale(.85);
+                            transform-origin: top;
+                            opacity: 0;
+                            box-shadow: 0 0 2px $border-dark;
+                            li{
+                                margin: 2px 4px;
+                                padding: 6px 10px;
+                                border-radius: 8px;
+                                display: block;
+    
+                                &:hover{
+                                    cursor: pointer;
+                                    background: $icon-bg-transparent;
+                                }
+                            }
+                        }
+                        .dropdown-btn{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 90%;
+                            border: 1px solid $border-light;
+                            padding: 4px 14px 5px 14px;
+                            border-radius: 10px;
+                            margin: 0 3px;
+                            background: $menu-bg;
+                            margin: 10px;
+                            &:focus ~ .dropdown{
+                               visibility: visible;
+                               transform: scale(1);
+                               opacity: 1;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px){
+    .section-dashboard{
+        .wrapper{
+            .container{
+                .main-title{
+                    font-size: 40px;
+                }
+                .secondary-title{
+                    font-size: 20px;
+                }
+
+                .dashboard-content{
+                    .edit-profile{
+                        .half{
+                            flex-direction: column;
+                        }
+                    }
+
+                    .subscriptions-table{
+                        .type{
+                            width:100% !important;
+                            margin: 0 !important;
+                        }
+
+                        .info{
+                            width: 100% !important;
+                            margin-top: 4px !important;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

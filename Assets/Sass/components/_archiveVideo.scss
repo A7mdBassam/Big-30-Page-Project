@@ -1,0 +1,44 @@
+.archive-video{
+    margin-top: 88px;
+    
+    .wrapper{
+
+        .container{
+            color: #333;
+            .main-title{
+                font-size: 60px;
+                color: $text-bright;
+                padding-left: 40px;
+            }
+
+            .secondary-title{
+                color: $text-light;
+                padding-left: 40px;
+            }
+
+            .container-select{
+ 
+                .open-modal, .sort-by{
+                    background-color: transparent !important;
+                    color: $text-bright;
+                    border: 1px solid $border-light-transparent;
+                    box-shadow: none;
+                }
+
+            }
+        }
+    }
+
+    .show-more{
+        border: none;
+    }
+    .page-numbers{
+        li{
+            color: $text-light;
+        }
+
+        .page-active{
+            color: $text-bright;
+        }
+    }
+}

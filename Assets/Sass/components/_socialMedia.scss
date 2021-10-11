@@ -1,0 +1,29 @@
+
+.social-media{
+    width: fit-content;
+    font-size: 14px;
+    display: inline-block;
+    .likes, .comments{
+        padding: 4px 14px 6px 14px;
+        border-radius: 100px;
+        background-color: $menu-bg;
+    }
+    .likes{
+        &:hover{
+            background: $likes-bg-hovered;
+            color: $likes-text-hovered;
+            cursor: pointer;
+        }
+        .fas.fa-heart{
+            color: $likes-text-hovered !important;
+        }
+    }
+
+    .comments{
+        &:hover{
+            background: $comments-bg-hovered;
+            color: $comments-text-hovered;
+            cursor: pointer;
+        }
+    }
+}

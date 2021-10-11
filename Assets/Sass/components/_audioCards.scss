@@ -1,0 +1,419 @@
+@import 'PlayAndMusic';
+
+// Music Card Big - the main one used in section 3 (music icon in the middle)
+.audio-card{
+    margin: 0 10px;
+    height: 300px;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-size: cover;
+    border-radius: 30px;
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 30px;
+        background-image: linear-gradient(to bottom, #ffffff00, #2c2c3fa8);
+        z-index: 0;
+        width: 100%;
+        height: 120px;
+    }
+
+
+    .bg-img{
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        z-index: -1;
+        object-fit: cover;
+    }
+    &-link{
+        display: block;
+        position: absolute;
+        height: 80px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .tag{
+        display: block;
+        margin-top: -8px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    &-title{
+        color: $audio-card-text-main;
+    }
+    &-author{
+        font-size: 16px;
+        color: $audio-card-text-main;
+    }
+    &-date{
+        font-size: 12px;
+        color: $audio-card-text-secondary;
+    }
+
+    &:hover .social-media, &:hover .bookmark{
+        opacity: 1;
+    }
+
+    .social-media{
+        position: absolute;
+        top: 18px;
+        left: 14px;
+        transition: opacity .2s ease;
+        opacity: 0;
+    }
+
+    .bookmark{
+        opacity: 0;
+        transition: opacity .2s ease;
+        display: block;
+        border-radius: 100px;
+        width: 30px;
+        height: 30px;
+        background: $bookmark-bg;
+        text-align: center;
+        padding-top: 4px; 
+        background: $bookmark-bg-hovered;
+        position: absolute;
+        right: 14px;
+        top: 14px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .text{
+        position: absolute;
+        bottom: 14px;
+        z-index: 1;
+    }
+
+    .music-icon{
+        position: absolute;
+        inset: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        &:hover{
+            transform: translate(-50%, -50%) scale(1.1);
+
+        }
+    }
+
+}
+.chevrons{
+    margin-bottom: 20px;
+}
+
+@media(max-width: 1024px)
+{
+    .audio-card{
+        &-date{
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 576px){
+    .audio-card-small{
+        img{
+            width: 50px !important;
+            height: 50px !important;
+        }
+    }
+}
+
+
+// Music Cards Small - usen in section 9
+.audio-card-small{
+    box-shadow: 0 0 2px $border-light;
+    padding: 15px;
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 10px;
+    align-items: center;
+    transition: box-shadow .1s;
+    &:hover{
+        box-shadow: 0 15px 20px -5px $border-light;
+    }
+    img{
+        border-radius: 100px;
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+
+    //text info (writing on the right of the picture)
+    .info{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        .title{
+            font-size: 20px;
+            font-weight: 500;
+            color: $text-dark;
+            text-decoration: none;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:hover{
+                color: $link-hovered;
+            }
+        }
+
+        .episodes{
+            font-size: 14px;
+            color: $text-one;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        //contains the play icon and "Listen now" text
+        .listen{
+            width: fit-content;
+            margin-top: 8px;
+            padding-right: 16px;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            border-radius: 100px;
+            color: $text-dark;
+            text-decoration: none;
+            transition: all .1s;
+            cursor: pointer;
+            &:hover{
+                background: $blue-bg;
+                transform: translateX(2px);
+            }
+            .play-icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                border-radius: 100px;
+                background: $blue-bg;
+                margin-right: 10px;
+                font-size: 12px;
+                color: $logo;
+                border: none;
+            }
+        }
+    }
+}
+
+//Audio Card Big - podcasts - used in section 8  and archiveAudio.html
+.audio-card-big{
+
+    .image-container{
+        position: relative;
+        height: 300px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        z-index: 0;
+    
+    
+        //background image
+        .bg-img{
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 30px;
+            filter: brightness(70%);
+        }
+    
+        .tag{
+            position: absolute;
+            top: 14px;
+            left: 14px;
+        }
+    
+    
+        .audio-lines{
+            margin-bottom: 70px;
+            width: 50%;
+            height: 30px;
+        }
+    
+        .play-icon{
+            background: $text-bright;
+            color: $logo;
+            font-size: 22px;
+            padding-left: 2px;
+            padding-top: 2px;
+            margin-right: 20px;
+            margin-bottom: 60px;
+            width: 60px;
+            height: 60px;
+            z-index: 1;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .podcast-card{
+        padding: 20px 26px;
+        border-radius: 20px;
+        border-top-left-radius: 0;;
+        background: $menu-bg;
+        box-shadow: 0 18px 14px -10px $border-light;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        width: 90%;
+        z-index: 1;
+        position: relative;
+    
+        //title
+        .title{
+            display: block;
+            font-size: 22px;
+            font-weight: 500;
+            text-decoration: none;
+            color: $text-dark;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 10px;
+            &:hover{
+                color: $link-hovered;
+            }
+        }
+    
+        //grey text below the title
+        .description{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: $text-one;
+        }
+    
+        @import 'bookmark';
+        .bookmark{
+            position: absolute;
+            right: 24px;
+            bottom: 18px;
+            width: 33px;
+            height: 33px;
+            
+            &:hover{
+                background: $border-light;
+            }
+        }
+    }
+    }    
+
+    
+// Smaller cards - pdcasts - used in secition 8 and archiveAudio.html
+.podcast-card-small{
+    height: 90px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 1000px;
+    background: #F3F4F6;
+    transition: all .2s;
+    &:hover{
+        box-shadow: 0 10px 20px -4px $border-light;
+    }
+    .left{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 70%;
+        .text{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            .title{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .episodes{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    //image
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: 100px;
+        margin-left: 12px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+
+    .title{
+        display: block;
+        font-size: 18px;
+        text-decoration: none;
+        color: $text-dark;
+        font-weight: 500;
+    }
+
+    //text below the title (episode number and length)
+    .episodes{
+        font-size: 14px;
+        color: $text-one;
+    }
+
+    .play-icon{
+        background: $text-bright;
+        color: $logo;
+        font-size: 22px;
+        padding-left: 2px;
+        padding-top: 2px;
+        width: 60px;
+        height: 60px;
+        z-index: 1;
+        border: none;
+        box-shadow: 0 10px 10px -4px $border-light;
+        margin-right: 20px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}
+
+@media(max-width: 768px){
+    .podcast-card-small{
+        .left{
+            img{
+                margin-right: 0;
+            }
+
+            .text{
+                margin-left: 10px;
+            }
+        }
+    }
+}

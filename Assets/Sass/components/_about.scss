@@ -1,0 +1,73 @@
+.section-about{
+    margin-top: 120px;
+    .wrapper{
+        .container{
+            padding-top: 60px;
+            padding-bottom: 60px;
+            .row{
+                align-items: center;
+            }
+             //blurry colorful circles in the background 
+             .circle{
+                overflow-x: hidden;
+                width: 350px;
+                height: 350px;
+                position: absolute;
+                left: 60px;
+                border-radius: 1000px;
+                filter: blur(100px);
+                margin-top: 160px;
+                z-index: -1;
+            }
+            .red-circle{
+                background-image: radial-gradient($circle-red, transparent);
+                top: 100px;
+            }
+            .blue-circle{
+                background-image: radial-gradient($circle-blue, transparent);
+                top: 400px;
+                
+            }
+
+            @import 'headersLeft';
+            .description{
+                font-size: 20px;
+                color: $text-one;
+                margin-bottom: 60px;
+            }
+
+            .image{
+                img{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width: 1023px){
+    .section-about{
+        .container{
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 576px){
+    .section-about{
+        .container{
+            .circle{
+                width: 60% !important;
+                height: 250px !important;
+                left: 50% !important;
+                transform: translateX(-50%);
+            }
+           
+            .mian-title{
+                border: 2px solid red !important;
+                
+            }
+        }
+    }
+}

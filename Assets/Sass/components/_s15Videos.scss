@@ -1,0 +1,173 @@
+
+.section-fifteen{
+    @import 'PlayAndMusic';
+    @import 'headersLeft';
+    .secondary-title{
+        max-width: 700px;
+        margin-bottom: 120px !important;
+    }
+    .container{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .col-lg-9{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .main-video{
+                position: relative;
+                height: 600px;
+                border-radius: 30px;
+                overflow: hidden;
+                &:hover .main-video-img{
+                    transform: scale(1.1);
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+                iframe{
+                    position: absolute;
+                    inset: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                }
+
+                .iframe-active{
+                    display: block;
+                    z-index: 2;
+                }
+
+                .main-video-img{
+                    height: 100%;
+                    object-position: top;
+                    transition: transform .3s ease;
+                    
+                }
+                
+                .play-icon{
+                    width: 94px;
+                    height: 94px;
+                    transform: translate(-50%, -50%);
+                    box-shadow: 0 0 0 40px $menu-bg-transparent;
+                    font-size: 30px;
+                    position: absolute;
+                    inset: 50%;
+                    color: $logo;
+                    background: #FFFFFF;
+                    border: none;
+
+                    &:hover{
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+
+
+        }
+
+        .col-lg-3{
+            .active{
+                box-shadow: 0 0 0 12px $border-light;
+            }
+            ul{
+                list-style: none;
+                padding-left: 0;
+                position: relative;
+                .background{
+                    position: absolute;
+                    background: $secondary-bg;
+                    top: -5%;
+                    right: 0;
+                    height: 110%;
+                    width: 150%;
+                    z-index: -1;
+                    border-radius: 30px;
+                }
+
+                li{
+                    position: relative;
+                    height: 130px;
+                    width: 170px;
+                    margin: 20px 10px;
+                    overflow: hidden;
+                    border-radius: 20px;
+                   
+                    &:hover img{
+                        transform: scale(1.1);
+                    }
+                    img{
+                        height: 100%;
+                        inset: 0;
+                        position: absolute;
+                        transition: transform .3s ease;
+                    }
+                    .play-icon{
+                        position: absolute;
+                        inset: 50%;
+                        transform: translate(-50%, -50%);
+                        color: $logo;
+                        background: #FFFFFF;
+                        border: none;
+                        &:hover{
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px)
+{
+    .section-fifteen{
+        .container{
+            .col-lg-3{
+                
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    li{
+                        display: inline-block;
+                        width: 150px;
+                    }
+
+                    .background{
+                        width: 100%;
+                        height: 120%;
+                        bottom: 0;
+                        left: 0;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px)
+{
+    .section-fifteen{
+        .container{
+            .col-lg-3{
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    li{
+                        display: inline-block;
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}

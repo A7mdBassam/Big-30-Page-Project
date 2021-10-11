@@ -1,0 +1,51 @@
+@media(min-width: 768px){
+    .section-four{
+        .wrapper{
+            padding: 40px 20px;
+        }
+    }
+}
+.section-four{
+    margin-top: 20px;
+    .wrapper{
+        padding: 40px 10px;
+        .container{
+            @import 'headersCenter';
+            max-width: 100%;
+
+            // Theres an audio card component that controls most of the stlyling,
+            //below are the changes specific to this sections audio card. 
+            .audio-card{
+                display: inline-block;
+                margin: 0 10px;
+                height: 400px;
+                width: 300px;
+                
+                .music-icon{
+                    font-size: 20px;
+                    position: absolute;
+                    inset: 50%;
+                    transform: translate(-50%, -50%);
+
+                    &:hover{
+                        transform: translate(-50%, -50%) scale(1.1);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .section-four{
+        .wrapper{
+            padding-left: 0;
+            padding-right: 0;
+            .container{
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+        }
+    }
+}

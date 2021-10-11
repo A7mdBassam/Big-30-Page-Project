@@ -1,0 +1,27 @@
+//blurry colorful circles in the background 
+.circle{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 20px;
+    border-radius: 1000px;
+    filter: blur(100px);
+    margin-top: 160px;
+    z-index: -2;
+}
+.red-circle{
+    background-image: radial-gradient($circle-red, $menu-bg);
+    top:-160px;
+}
+.blue-circle{
+    background-image: radial-gradient($circle-blue, $menu-bg);
+    top: 100px;
+    
+}
+
+@media(max-width: 768px){
+    .circle{
+        width: 90% !important;
+        left: 0 !important;
+    }
+}

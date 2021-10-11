@@ -1,0 +1,26 @@
+//headers
+.main-title, .secondary-title{
+    text-align: center;
+}
+.main-title{
+    color: $text-dark;
+    font-size: 40px;
+    font-weight: bold;
+}
+.secondary-title{
+    color: $text-one;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
+@media(max-width: 768px){
+    .main-title{
+        font-size: 26px;
+    }
+
+    .secondary-title{
+        font-size: 18px;
+    }
+}

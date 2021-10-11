@@ -1,0 +1,26 @@
+//links that appear on hover (top right corner of the image)
+.social-media-links{
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    opacity: 0;
+    transition: opacity .2s ease;
+    li{
+        text-align: center;
+        margin: 4px;
+        a{                        
+            background: $menu-bg;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            font-size: 14px;
+            color: $text-dark;
+        }
+    }
+}

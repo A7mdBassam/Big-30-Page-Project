@@ -1,0 +1,96 @@
+.section-thirteen{
+    .container{
+        @import 'headersCenter';
+        padding: 0;
+        .slick{
+            .article-card{
+                box-shadow: 0 0 2px $border-light;
+                display: inline-block;
+                height: 380px;
+                border-radius: 20px;
+                background: $menu-bg;
+                transition: all .1s;
+                position: relative;
+                margin: 14px;
+                &:hover{
+                    box-shadow: 0 15px 20px -7px $border-light;
+                }
+                .bg-img{
+                    width: 100%;
+                    object-fit: cover;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    height: 220px;
+                }
+                .tag{
+                    position: absolute;
+                    top: 14px;
+                    left: 12px;
+                }
+                .author-info{
+                    padding: 10px 14px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: center;
+                    .avatar{
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 100px;
+                        margin-right: 6px;
+                    }
+
+                    .name{
+                        text-decoration: none;
+                        color: $text-dark;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-right: 4px;
+                    }
+
+                    .date{
+                        font-size: 12px;
+                        color: $text-one;
+                    }
+                }
+
+                .title{
+                    padding: 0 16px;
+                    text-decoration: none;
+                    color: $text-dark;
+                    font-size: 18px;
+                    font-weight: 500;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    line-height: 24px;
+
+                }
+
+                @import 'bookmark';
+                .social-media, .bookmark{
+                    position: absolute;
+                }
+
+                .social-media{
+                    bottom: 18px;
+                    left: 14px;
+                }
+
+                .bookmark{
+                    bottom: 14px;
+                    right: 18px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            
+        }
+
+        .chevrons{
+            margin-top: 30px;
+        }
+    }
+}

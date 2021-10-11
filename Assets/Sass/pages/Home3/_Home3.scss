@@ -1,0 +1,33 @@
+@import 'header';
+@import 'Topics';
+@import 'Articles';
+
+
+@media(min-width: 1023px){
+    section{
+        .wrapper{
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+    
+            .container{
+                padding-right: 10px !important;
+                padding-left: 10px !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 576px){
+    section{
+        .wrapper{
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+    
+            .container{
+                padding-right: 10px !important;
+                padding-left: 10px !important;
+            }
+        }
+    }
+}
+

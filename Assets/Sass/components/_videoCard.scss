@@ -1,0 +1,122 @@
+.video-card{
+    position: relative;
+    padding: 4px;
+    margin: 16px 0;
+    color: $text-bright !important;
+    &:hover iframe{
+        display: block;
+    }
+
+     &:hover .play-icon{
+        display: none !important;
+    }
+
+    .link{
+        z-index: 2;
+    }
+    //contains the image and everything displayed on it (tag and bookmark)
+    .image-container{
+        height: 240px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        img{
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+        }
+
+        .tag{
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            z-index: 2;
+        }
+        @import 'bookmark';
+        .bookmark{
+            position: absolute;
+            right: 14px;
+            top: 14px;
+            width: 34px;
+            height: 34px;
+            color: $text-light;
+            background: $text-dark;
+            z-index: 2;
+
+            &:hover{
+                filter: brightness(120%);
+            }
+        }
+
+        @import 'PlayAndMusic';
+        .play-icon{
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    //contains the title, author's image and name, and date 
+    .info-container{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+
+        //author image
+        .avatar{
+            object-fit: cover;
+            object-position: top;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        //text info (title, name, and date)
+        .text{
+            width: 82%;
+            display: flex;
+            flex-direction: column;
+            .title{
+                font-size: 18px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 0;
+            }
+
+            .name{
+                font-size: 14px;
+                font-weight: 500;
+                color: $text-light;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .date{
+                font-size: 12px;
+                color: $text-light;
+            }
+        }
+        
+    }
+
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        border-radius: 30px;
+        display: none;
+    }
+}
+
+

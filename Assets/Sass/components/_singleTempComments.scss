@@ -1,0 +1,101 @@
+//responses (comment section)
+.responses{
+    .container{
+        margin-left: 20px;
+    }
+    .title{
+        margin-top: 0;
+    }
+    .response-btn{
+        border-radius: 100px;
+        padding: 10px 24px;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 4px;
+        border: 2px solid $menu-bg;
+    
+        &:focus{
+            box-shadow: 0 0 0 2px $logo;
+        }
+    }
+    
+    .submit{
+        background: $logo;
+        color: $text-bright;
+    }
+    
+    .cancel{
+    background: $secondary-bg;
+    }
+
+    .responses-container{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+       // border: 2px solid red;
+        .response{
+          //  border: 2px dashed red;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: flex-start;
+            margin: 14px 0;
+            .avatar{
+                border-radius: 100px;
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                margin-top: 10px;
+                margin-right: 12px;
+            }
+
+            .content{
+                box-shadow: 0 0 2px $border-dark;
+                padding: 20px;
+                width: 95%;
+                border-radius: 12px;
+
+                .author-info{
+                    margin-bottom: 14px;
+                    .name{
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: $text-dark;
+                    }
+                    .date{
+                        font-size: 14px;
+                        color: $text-light;
+                    }
+                }
+
+                //the written comment
+                .comment{
+                    display: block;
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                    color: $text-dark;
+                }
+
+                //likes and reply buttons
+                .social-media{
+                    .likes, .comments{
+                        background: $secondary-bg;
+                    }
+                }
+
+                // Users reply box
+                .comment-container{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .reply{
+        width: 90%;
+        margin-left: auto !important;
+    }
+
+}

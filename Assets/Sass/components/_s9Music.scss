@@ -1,0 +1,41 @@
+
+.section-nine{
+    .container{
+        padding: 0;
+
+        @import 'headersLeft';
+
+        .audio-card{
+            .bg-img{
+                z-index: 0;
+            }
+        }
+    
+}
+}
+
+@media(max-width: 768px)
+{
+    .section-nine{
+        .container{
+            padding: 12px !important;
+        }
+    }
+}
+
+@media(max-width: 576px){
+    .section-nine{
+        .audio-card-small{
+            img{
+                width: 70px !important;
+                height: 70px !important;
+            }
+
+            .info{
+                width: 60% !important;
+            }
+        }
+    }
+}
+
+

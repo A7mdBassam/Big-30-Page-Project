@@ -1,0 +1,46 @@
+.tag{
+    border-radius: 100px;
+    width: fit-content;
+    padding: 2px 10px 3px 10px;
+    font-weight: 500;
+    font-size: small;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+.tag-yellow{
+    background-color: $tag-yellow-bg;
+    color: $tag-yellow-text;
+    &:hover{
+        background-color: $tag-yellow-bg-hovered;
+    color: $tag-yellow-text-hovered;
+    }
+}
+
+.tag-red{
+    background-color: $tag-red-bg;
+    color: $tag-red-text;
+    &:hover{
+        background-color: $tag-red-bg-hovered;
+         color: $tag-red-text-hovered;
+    }
+}
+
+.tag-blue{
+    background-color: $tag-blue-bg;
+    color: $tag-blue-text;
+    &:hover{
+        background-color: $tag-blue-bg-hovered;
+         color: $tag-blue-text-hovered;
+    }
+}
+
+.tag-dark-red{
+    background-color: $tag-dark-red-bg;
+    color: $tag-dark-red-text;
+    &:hover{
+        background-color: $tag-dark-red-bg-hovered;
+         color: $tag-dark-red-text-hovered;
+    }
+}
+

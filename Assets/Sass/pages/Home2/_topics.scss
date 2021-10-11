@@ -1,0 +1,59 @@
+@import '../../components/headersLeft';
+.home-two-topics{
+   
+    .topic-card{
+        position: relative;
+        border-radius: 20px;
+        position: relative;
+        overflow: visible;
+
+        &:hover .topic-image-link{
+            background: rgba(0, 0, 0, .30);
+        }
+     
+        .topic-image-link{
+            &:hover{
+                filter: brightness(100%) !important;
+            }
+        }
+        .bg-img{
+            width: 100% !important;
+            height: 200px !important;
+            position: relative;
+            filter: none;
+            transition: all .2s;
+            &:hover{
+                filter: none;
+            }
+        }
+
+        .topic-name{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            box-shadow: 0 0 0 2px $text-bright;
+            backdrop-filter: blur(10px);
+            padding: 10px 24px;
+            font-size: 20px;
+            text-decoration: none;
+            color: $text-dark;
+            border-radius: 100px;
+            background:rgba(255, 255, 255, .25);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease;
+        }
+
+        &:hover .bg-img{
+                filter: blur(1px);
+            }
+
+        &:hover .topic-name{
+            transform: scale(130%) translate(-37.5%, -37.5%);
+        }
+        
+    }
+}

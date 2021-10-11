@@ -1,0 +1,131 @@
+// Trending Topics Section
+.section-three{
+    .wrapper{
+        padding: 40px 20px;
+        .container{
+            max-width: 100%;
+            &::before, &::after{
+                display: none !important;
+            }
+            @import 'headersLeft';
+            //ARROWS
+            .chevrons{
+                text-align: right;
+                margin-top: -100px;
+            }
+
+            //SLICK JS SLIDER
+            .slick{
+            overflow-y: hidden;
+            margin-top: 50px;
+            background-image: linear-gradient(#fff, #fff);
+
+            &::before, &::after{
+                display: none !important;
+            }
+            }
+
+            //CARD
+            .topic-card{
+                display: inline-block;
+                margin: 0 10px;
+                width: 300px;
+                height: fit-content;
+                position: relative;
+                .topic-info{
+                    position: relative;
+                    margin-left: 2px;
+                    .topic-info-link{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                    }
+
+                    .circle{
+                        display: inline-block;
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 100px;
+                        background: #6366F1;
+                        margin-top: 20px;
+                    }
+
+                    .topic-text{
+                        
+                        display: inline-block;
+                        margin-left: 10px;
+                        .topic-name{
+                            display: inline-block;
+                            font-size: 20px;
+                            font-weight: 600;
+                            text-decoration: none;
+                            color: $text-main;
+                        }
+
+                        .topic-number{
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: $text-one;
+                        }
+                    }
+                }
+                .tag{
+                    margin-bottom: 10px;
+                    position: absolute;
+                    top: 14px;
+                    left: 18px;
+                }
+                .topic-image-link{
+                    transition: all .2s;
+                    z-index: 100;
+                    img{
+                    width: 100%;
+                    height: 160px;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 30px;
+                }
+                &:hover{
+                    filter: brightness(82%);
+                }
+            }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .section-three{
+        .wrapper{
+            padding: 10px 0px 30px 0px;
+            max-width: none;
+
+            .container{
+                padding: 0 0 10px 0;
+                padding-left: 12px;
+                padding-right: 12px;
+                h4.secondary-title{
+                    margin-bottom: 10px;
+                }
+                .chevrons{
+                    margin: 0 !important;
+                }
+
+                .slick{
+                    margin-top: 10px;
+                }
+
+                .topic-card{
+                    .topic-image-link{
+                        img{
+                            height: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

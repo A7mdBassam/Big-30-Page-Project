@@ -1,0 +1,117 @@
+.modal-active{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: $icon-bg-transparent;
+
+    .modal-content{
+        background: $menu-bg;
+        width: 800px;
+        position: relative;
+        border-radius: 14px;
+        padding-bottom: 20px;
+        .close{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 100px;
+            position: absolute;
+            top: 14px;
+            left: 10px;
+            font-size: 20px;
+            &:hover{
+                background: $secondary-bg;
+                cursor: pointer;
+            }
+        }
+
+        .title{
+            text-align: center;
+            border-bottom: 1px solid $border-light;
+            padding: 20px;
+        }
+
+
+        .reasons{
+            display: flex;
+            flex-direction: row;
+            padding: 10px 20px;
+            list-style: none;
+            flex-wrap: wrap;
+            li{
+                width: 180px;
+                margin: 0 auto;
+                
+            
+                button{
+                    display: flex;
+                justify-content: space-between;
+                align-items: center;
+                    width: 100%;
+                    padding: 10px 18px;
+                    border: 2px solid $menu-bg;
+                    background: $menu-bg;
+                    border-radius: 10px;
+                    box-shadow: 0 10px 20px -3px $border-light;
+                    .fa-check{
+                        display: none;
+                    }
+                }
+            }
+
+            .active{
+                border: 2px solid $menu-bg;
+                box-shadow: 0 0 0 2px $logo;
+                background: $logo;
+                color: $text-bright;
+                .fa-check{
+                    display: contents !important;
+                }
+            }
+        }
+
+        // contains the "Message" text and the textarea 
+        .message{
+            padding: 0px 30px;
+        }
+        h4{
+            margin-top: 20px;
+            color: $text-dark;
+        }
+
+        .description{
+            font-size: 16px;
+            color: $text-light;
+        }
+
+        //cnacel and submit buttons
+        button{
+            border-radius: 100px;
+            padding: 10px 24px;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 4px;
+            border: 2px solid $menu-bg;
+        
+            &:focus{
+                box-shadow: 0 0 0 2px $logo;
+            }
+        }
+        
+        .submit{
+            background: $logo;
+            color: $text-bright;
+        }
+        
+        .cancel{
+        background: $secondary-bg;
+        }
+
+    }
+}
+
+.modal{
+    display: none;
+}

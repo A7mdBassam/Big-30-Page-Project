@@ -1,0 +1,192 @@
+.home-three-editors-pick{
+    .article-card-secondary{
+        box-shadow: none !important;
+
+        .author-info{
+            height: fit-content !important;
+            margin-top: 40px !important;
+        }
+    }
+}
+
+// @media(min-width: 768px){
+//     .home-three-editors-pick{
+//         .wrapper{
+//             padding-left: 50px !important;
+//             padding-right: 50px !important;
+//         }
+//     }
+// }
+
+@media(max-width: 767px){
+.home-three-editors-pick{
+    .article-card-secondary{
+        margin-top: 240px;
+        margin-bottom: 100px !important;
+        
+
+        .author-info{
+            margin-top: 10px !important;
+        }
+    }
+}
+}
+
+
+.home-three-articles-tall{
+
+    .main-title{
+        padding-left: 0;
+    }
+    .secondary-title{
+        padding-left: 0;
+    }
+    .slick{
+        padding: 0 !important;
+        .article-card-tall{
+            display: inline-block;
+            margin: 10px;
+            .image{
+                height: 350px;
+                position: relative;
+                border-radius: 20px;
+                overflow: hidden;
+                .bg-img{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    object-fit: cover;
+                    z-index: -1;
+                }
+
+                .tag{
+                    position: absolute;
+                    top: 14px;
+                    left: 14px;
+                }
+
+                @import '../../components/bookmark';
+                .bookmark{
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            .text{
+                padding-left: 8px;
+                padding-right: 8px;
+                .title{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $text-dark;
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-decoration: none;
+                    text-overflow: ellipsis;
+                    margin-bottom:5px;
+                }
+
+                .author-info{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    z-index: 2;
+                    .avatar{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100px;
+                        object-fit: cover;
+                        margin-right: 6px;
+                    }
+                    
+                    .name{
+                        color: $text-dark;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-decoration: none;
+                        margin-right: 3px;
+                    }
+
+                    .date{
+                        color: $text-one;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.home-three-side-article{
+
+    .bg-img{
+        filter: brightness(100%) ;
+    }
+    .social-media{
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        opacity: 0;
+        transition: all .2s ease;
+        z-index: 1;
+    }
+
+    &:hover{
+        .social-media, .bookmark{
+            opacity: 1;
+        }
+    }
+    @import '../../components/bookmark';
+    .bookmark{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        opacity: 0;
+        transition: all .2s ease;
+        z-index: 1;
+        color: $text-dark;
+    }
+    .text{
+        padding: 20px;
+        background-color: rgba(255, 255, 255, .40);
+        backdrop-filter: blur(4px);
+        border-radius: 20px;
+        .title{
+        color: $text-dark;
+        font-size: 18px;
+            &:hover{
+                color: $link-hovered;
+            }
+        }
+
+        .tag{
+            position: relative;
+            display: block;
+            margin-bottom: 4px;
+            left: 0;
+            top: 0;
+        }
+    }
+    .author-info{
+
+        .author-text{
+            .name{
+                font-size: 18px;
+                font-weight: 500;
+                text-decoration: none;
+                color: $text-dark;
+            }
+        }
+    }
+}
