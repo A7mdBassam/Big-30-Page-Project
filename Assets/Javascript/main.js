@@ -158,24 +158,26 @@ $(".section-one .prev-card").on("click",function(){
 
 
     // Progress bar for template pages
-var progress = document.getElementsByClassName("prog-bar")[0];
-var header = document.getElementsByClassName("section-header")[0];
-
 $(".progress").hide();
-window.onscroll = function(){
-    //showing and hiding the bar (hide if still in header)
-    if (window.scrollY > header.scrollHeight)
-    $(".progress").show();
+var progress = document.getElementsByClassName("prog-bar")[0];
 
+window.onscroll = function(){
+    
+    //showing and hiding the bar (hide if still in header)
+    if (window.scrollY > $(".section-header")[0].scrollHeight)
+    $(".progress").show();
     else
     $(".progress").hide();
-
     
-    var totalHeight = $(".article").height(); // taking the articles height
-    var progressHeight = (((window.scrollY - $(".section-header").height() + screen.height) / totalHeight) * 100); // taking the scrolled distance + the screens height (browser viewport) - the headers height and dividing by the articles height 
-    progress.style.width = (progressHeight)+ "%"; // putting it in the css as a percantage 
+    var totalHeight = $(".article").height() + $(".section-header").height(); // taking the articles height
 
+    var progressHeight = ((((window.scrollY + screen.height) / totalHeight)) * 100); // dividing the scrolled distance over the total height of the article. (the multiply by 100 is for making the percentage to be put in css).
+
+    progress.style.width = (progressHeight)+ "%"; // putting it in the css as a percantage 
 }
+console.log("window.height: " + window.scrollY);
+console.log("screen.height: " + screen.height);
+
 
 //showing a textarea when clicking on "reply" on a comment
 $(".show-comment").on("click", function(){

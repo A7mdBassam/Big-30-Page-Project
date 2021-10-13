@@ -4,9 +4,7 @@
         padding: 40px 20px;
         .container{
             max-width: 100%;
-            &::before, &::after{
-                display: none !important;
-            }
+
             @import 'headersLeft';
             //ARROWS
             .chevrons{
@@ -18,11 +16,6 @@
             .slick{
             overflow-y: hidden;
             margin-top: 50px;
-            background-image: linear-gradient(#fff, #fff);
-
-            &::before, &::after{
-                display: none !important;
-            }
             }
 
             //CARD
@@ -44,13 +37,15 @@
                         z-index: 1;
                     }
 
-                    .circle{
+                    .topic-circle{
                         display: inline-block;
                         width: 42px;
                         height: 42px;
                         border-radius: 100px;
-                        background: #6366F1;
                         margin-top: 20px;
+                    }
+                    .topic-circle-blue{
+                        background: #6366F1;
                     }
 
                     .topic-text{

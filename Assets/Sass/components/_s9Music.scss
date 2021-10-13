@@ -5,6 +5,11 @@
 
         @import 'headersLeft';
 
+        .row{
+            .col-lg-4{
+                padding: 0;
+            }
+        }
         .audio-card{
             .bg-img{
                 z-index: 0;
@@ -14,14 +19,7 @@
 }
 }
 
-@media(max-width: 768px)
-{
-    .section-nine{
-        .container{
-            padding: 12px !important;
-        }
-    }
-}
+
 
 @media(max-width: 576px){
     .section-nine{
